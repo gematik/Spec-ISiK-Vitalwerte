@@ -26,14 +26,14 @@
         "display": "Body temperature"
       },
       {
+        "system": "http://snomed.info/sct",
+        "code": "386725007",
+        "display": "Body temperature (observable entity)"
+      },
+      {
         "code": "150364",
         "system": "urn:iso:std:iso:11073:10101",
         "display": "MDC_TEMP_BODY"
-      },
-      {
-        "code": "386725007",
-        "system": "http://snomed.info/sct",
-        "display": "Body temperature (observable entity)"
       }
     ],
     "text": "Körpertemperatur"

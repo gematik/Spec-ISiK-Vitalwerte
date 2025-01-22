@@ -17,6 +17,12 @@
       ]
     }
   ],
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "code": "1",
+    "value": 11,
+    "unit": "Punktwert"
+  },
   "code": {
     "coding": [
       {
@@ -35,12 +41,6 @@
         "display": "MDC_SCORE_GLAS_COMA"
       }
     ]
-  },
-  "valueQuantity": {
-    "system": "http://unitsofmeasure.org",
-    "code": "1",
-    "value": 11,
-    "unit": "Punktwert"
   },
   "component": [
     {

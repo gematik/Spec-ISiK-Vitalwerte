@@ -21,19 +21,19 @@
   "code": {
     "coding": [
       {
-        "code": "188740",
-        "system": "urn:iso:std:iso:11073:10101",
-        "display": "MDC_LEN_BODY_ACTUAL"
-      },
-      {
         "system": "http://loinc.org",
         "code": "8302-2",
         "display": "Body height"
       },
       {
-        "code": "1153637007",
         "system": "http://snomed.info/sct",
+        "code": "1153637007",
         "display": "Body height (observable entity)"
+      },
+      {
+        "code": "188740",
+        "system": "urn:iso:std:iso:11073:10101",
+        "display": "MDC_LEN_BODY_ACTUAL"
       }
     ],
     "text": "Körpergröße"
