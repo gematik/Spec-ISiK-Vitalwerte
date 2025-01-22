@@ -52,8 +52,8 @@
     "fshName": "ISiKEKGExample",
     "fshType": "Instance",
     "fshFile": "ISiK-Ekg.fsh",
-    "startLine": 32,
-    "endLine": 57
+    "startLine": 35,
+    "endLine": 60
   },
   {
     "outputFile": "Observation-ISiKGCSExample.json",
@@ -493,7 +493,7 @@
     "fshType": "Profile",
     "fshFile": "ISiK-Ekg.fsh",
     "startLine": 1,
-    "endLine": 30
+    "endLine": 33
   },
   {
     "outputFile": "StructureDefinition-ISiKGCS.json",

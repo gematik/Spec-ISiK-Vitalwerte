@@ -149,67 +149,17 @@
       {
         "id": "Observation.component.value[x]",
         "path": "Observation.component.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
         "short": "Wert der Komponente",
         "comment": "Motivation MS: Der Wert der Komponente ist ein Ergebnis der Untersuchung",
         "mustSupport": true
       },
       {
-        "id": "Observation.component.value[x]:valueSampledData",
-        "path": "Observation.component.value[x]",
-        "sliceName": "valueSampledData",
-        "short": "SampledData",
-        "comment": "Motivation MS: Die EKG-Daten werden mittels des SampledData Datentyps abgebildet.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "SampledData"
-          }
-        ],
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.component.value[x]:valueSampledData.origin",
-        "path": "Observation.component.value[x].origin",
-        "short": "Ausgangswert",
-        "comment": "Motivation MS: Das Feld `origin` definiert den Referenzpunkt und die Einheit der Messreihe, um sicherzustellen, dass die gemessenen Werte im richtigen Kontext interpretiert werden können.",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.component.value[x]:valueSampledData.period",
-        "path": "Observation.component.value[x].period",
-        "short": "Messintervall",
-        "comment": "Motivation MS: Das Feld `period` definiert die zeitliche Distanz zwischen zwei aufeinanderfolgenden Messwerten.",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.component.value[x]:valueSampledData.dimensions",
-        "path": "Observation.component.value[x].dimensions",
-        "short": "Dimensionen",
-        "comment": "Motivation MS: Das Feld `dimensions` gibt die Anzahl der Achsen oder Dimensionen an, die in der Messreihe enthalten sind, und ist notwendig, um die Struktur der Daten korrekt zu verstehen.",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.component.value[x]:valueSampledData.data",
-        "path": "Observation.component.value[x].data",
-        "short": "Messwerte",
-        "comment": "Motivation MS: Das Feld `data` enthält die eigentlichen Messwerte der EKG-Daten.",
-        "mustSupport": true
-      },
-      {
         "id": "Observation.component:ekgLeads",
         "path": "Observation.component",
-        "sliceName": "ekgLeads"
+        "sliceName": "ekgLeads",
+        "short": "EKG-Ableitungen",
+        "comment": "Motivation MS: Die einzelnen Ableitungen des EKG werden als component abgebildet",
+        "mustSupport": true
       },
       {
         "id": "Observation.component:ekgLeads.code",
@@ -224,6 +174,36 @@
       {
         "id": "Observation.component:ekgLeads.value[x]",
         "path": "Observation.component.value[x]",
+        "short": "SampledData",
+        "comment": "Motivation MS: Die EKG-Daten werden mittels des SampledData Datentyps abgebildet.",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:ekgLeads.value[x].origin",
+        "path": "Observation.component.value[x].origin",
+        "short": "Ausgangswert",
+        "comment": "Motivation MS: Das Feld `origin` definiert den Referenzpunkt und die Einheit der Messreihe, um sicherzustellen, dass die gemessenen Werte im richtigen Kontext interpretiert werden können.",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:ekgLeads.value[x].period",
+        "path": "Observation.component.value[x].period",
+        "short": "Messintervall",
+        "comment": "Motivation MS: Das Feld `period` definiert die zeitliche Distanz zwischen zwei aufeinanderfolgenden Messwerten.",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:ekgLeads.value[x].dimensions",
+        "path": "Observation.component.value[x].dimensions",
+        "short": "Dimensionen",
+        "comment": "Motivation MS: Das Feld `dimensions` gibt die Anzahl der Achsen oder Dimensionen an, die in der Messreihe enthalten sind, und ist notwendig, um die Struktur der Daten korrekt zu verstehen.",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:ekgLeads.value[x].data",
+        "path": "Observation.component.value[x].data",
+        "short": "Messwerte",
+        "comment": "Motivation MS: Das Feld `data` enthält die eigentlichen Messwerte der EKG-Daten.",
         "mustSupport": true
       },
       {
