@@ -40,9 +40,6 @@ Datum: 4.4.2024
 * Hinweis zu Profilen aus ISiK Support-Modul Labor hinzugefügt - siehe https://simplifier.net/guide/isik-vitalparameter-v4/ImplementationGuide-markdown-Datenobjekte-Laborprofile?version=current
 * Fix CpS rendering by @alexzautke in https://github.com/gematik/spec-ISiK-Vitalparameter-und-Koerpermasze/pull/161 
 
-
-**Full Changelog**: https://github.com/gematik/spec-ISiK-Vitalparameter-und-Koerpermasze/compare/v.3.0.2...v.4.0.0-rc
-
 ----
 Version: 3.0.2
 
@@ -92,8 +89,6 @@ Datum: 24.03.2023
 
 * update example temperature + heartrate #102 by @f-peverali in <https://github.com/gematik/spec-ISiK-Vitalparameter-und-Koerpermasse/pull/104>
   * Änderungen an Beispielen
-
-**Full Changelog**: <https://github.com/gematik/spec-ISiK-Vitalparameter-und-Koerpermasse/compare/v2.0.2...v.2.0.5>
 
 ----
 Version: 2.0.2
