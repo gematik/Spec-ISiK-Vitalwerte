@@ -11,6 +11,9 @@ Datum: tbd.
 * Fehlende Codes zu ValueSet hinzugefügt https://github.com/gematik/spec-ISiK-Vitalparameter-und-Koerpermasze/pull/175
 *  improve: Beschreibungen und MS-Kommentare für alle "Nicht-MII"-Ressourcen hinzugefügt und MS für value[x] verbessert https://github.com/gematik/spec-ISiK-Vitalparameter-und-Koerpermasze/pull/184
 * Formulierungsänderung zur Nutzung von Profilen aus der Basis https://github.com/gematik/spec-ISiK-Vitalparameter-und-Koerpermasze/pull/196
+* `change` Die Verbindlichkeit des Suchparameters `subject` wurde von SHALL auf MAY reduziert, da der Suchparameter `patient` für ISiK-Zwecke ausreichend ist.  https://github.com/gematik/spec-ISiK-Vitalparameter-und-Koerpermasze/pull/192
+* `change` Die Verbindlichkeit von Include und RevInclude wurde von SHALL auf MAY reduziert, außer bei den Parameter `patient` und `encounter`, da diese für ISiK-Zwecke ausreichend sind. https://github.com/gematik/spec-ISiK-Vitalparameter-und-Koerpermasze/pull/192 
+
 ---
 Version: 4.0.0
 
@@ -40,9 +43,6 @@ Datum: 4.4.2024
 * Hinzufügen von MS für einzelne Components : https://github.com/gematik/spec-ISiK-Vitalparameter-und-Koerpermasze/pull/138
 * Hinweis zu Profilen aus ISiK Support-Modul Labor hinzugefügt - siehe https://simplifier.net/guide/isik-vitalparameter-v4/ImplementationGuide-markdown-Datenobjekte-Laborprofile?version=current
 * Fix CpS rendering by @alexzautke in https://github.com/gematik/spec-ISiK-Vitalparameter-und-Koerpermasze/pull/161 
-
-
-**Full Changelog**: https://github.com/gematik/spec-ISiK-Vitalparameter-und-Koerpermasze/compare/v.3.0.2...v.4.0.0-rc
 
 ----
 Version: 3.0.2
@@ -93,8 +93,6 @@ Datum: 24.03.2023
 
 * update example temperature + heartrate #102 by @f-peverali in <https://github.com/gematik/spec-ISiK-Vitalparameter-und-Koerpermasse/pull/104>
   * Änderungen an Beispielen
-
-**Full Changelog**: <https://github.com/gematik/spec-ISiK-Vitalparameter-und-Koerpermasse/compare/v2.0.2...v.2.0.5>
 
 ----
 Version: 2.0.2

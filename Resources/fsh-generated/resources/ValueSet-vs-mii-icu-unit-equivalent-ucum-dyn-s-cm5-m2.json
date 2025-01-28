@@ -9,7 +9,7 @@
   "url": "https://gematik.de/fhir/isik/ValueSet/vs-mii-icu-unit-equivalent-ucum-dyn-s-cm5-m2",
   "experimental": false,
   "publisher": "gematik GmbH",
-  "date": "2024-11-21",
+  "date": "2025-01-08",
   "compose": {
     "include": [
       {
