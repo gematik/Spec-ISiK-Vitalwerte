@@ -27,11 +27,7 @@
       },
       {
         "system": "http://loinc.org",
-        "code": "29463-7"
-      },
-      {
         "code": "29463-7",
-        "system": "http://loinc.org",
         "display": "Body weight"
       },
       {

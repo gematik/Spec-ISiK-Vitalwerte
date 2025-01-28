@@ -3,7 +3,8 @@
   "id": "ISiKEKGExample",
   "meta": {
     "profile": [
-      "https://gematik.de/fhir/isik/StructureDefinition/ISiKEKG"
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKEKG",
+      "http://fhir.de/StructureDefinition/observation-de-ekg"
     ]
   },
   "code": {

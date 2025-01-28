@@ -42,3 +42,6 @@ Description: "Dieses ValueSet enthält Codes für Vitaldaten sowie Daten aus dem
 * Mdc#147842 "Heart Rate"
 * Mdc#188504 "Nasal temperature"
 * Mdc#149514 "Pulse rate"
+* Mdc#150356 "MDC_TEMP_AWAY"
+* Mdc#150372 "MDC_TEMP_ESOPH"
+* Mdc#188796 "MDC_MASS_BODY_EST_IBW"

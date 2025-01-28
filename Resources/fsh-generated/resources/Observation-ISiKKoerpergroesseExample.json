@@ -26,8 +26,13 @@
         "display": "MDC_LEN_BODY_ACTUAL"
       },
       {
-        "system": "http://snomed.info/sct",
+        "system": "http://loinc.org",
+        "code": "8302-2",
+        "display": "Body height"
+      },
+      {
         "code": "1153637007",
+        "system": "http://snomed.info/sct",
         "display": "Body height (observable entity)"
       }
     ],

@@ -4,6 +4,7 @@
   "meta": {
     "profile": [
       "https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell",
+      "http://hl7.org/fhir/StructureDefinition/oxygensat",
       "http://fhir.de/StructureDefinition/observation-de-vitalsign-sauerstoffsaettigung"
     ]
   },

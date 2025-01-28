@@ -4,11 +4,11 @@
   "url": "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementVitalparameterServerHospital",
   "status": "active",
   "experimental": false,
-  "version": "4.0.0",
+  "version": "4.0.1",
   "publisher": "gematik GmbH",
-  "date": "2024-09-30",
+  "date": "2024-11-21",
   "implementationGuide": [
-    "https://gematik.de/fhir/isik/ImplementationGuide/ISiK-Vitalparameter|4.0.0"
+    "https://gematik.de/fhir/isik/ImplementationGuide/ISiK-Vitalparameter|4.0.1"
   ],
   "name": "ISiKCapabilityStatementVitalparameterServerHospital",
   "title": "ISiK CapabilityStatement Vitalparameter Server Hospital",

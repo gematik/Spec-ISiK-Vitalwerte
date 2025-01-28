@@ -2,12 +2,12 @@
   "resourceType": "StructureDefinition",
   "id": "sd-mii-icu-monitoring-und-vitaldaten",
   "url": "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-monitoring-und-vitaldaten",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "name": "SD_MII_ICU_Monitoring_Und_Vitaldaten",
   "title": "SD MII ICU Monitoring und Vitaldaten",
   "status": "active",
   "experimental": false,
-  "date": "2024-09-30",
+  "date": "2024-11-21",
   "publisher": "gematik GmbH",
   "fhirVersion": "4.0.1",
   "kind": "resource",
@@ -56,6 +56,7 @@
       {
         "id": "Observation.status",
         "path": "Observation.status",
+        "comment": "Motivation MS: Observation.status ist bereits durch die Kardinalität der Basisklasse Observation erzwungen. Dieses Feld dient der Präzisierung des Status der Untersuchung",
         "mustSupport": true
       },
       {
@@ -276,7 +277,7 @@
       {
         "id": "Observation.performer",
         "path": "Observation.performer",
-        "comment": "Motivation: Dieses Feld stellt eine präzisierende Angaben zum Zweck der Qualitätsbewertung bereit",
+        "comment": "Motivation MS: Dieses Feld stellt eine präzisierende Angaben zum Zweck der Qualitätsbewertung bereit",
         "mustSupport": true
       },
       {
@@ -346,7 +347,7 @@
       {
         "id": "Observation.method",
         "path": "Observation.method",
-        "comment": "Motivation: Dieses Feld stellt eine präzisierende Angaben zum Zweck der Qualitätsbewertung bereit",
+        "comment": "Motivation MS: Dieses Feld stellt eine präzisierende Angaben zum Zweck der Qualitätsbewertung bereit",
         "mustSupport": true
       },
       {

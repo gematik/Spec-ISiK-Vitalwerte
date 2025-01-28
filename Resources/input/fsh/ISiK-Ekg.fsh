@@ -1,35 +1,38 @@
 Profile: ISiKEKG
-Parent: http://fhir.de/StructureDefinition/observation-de-ekg
+Parent: EkgDE
 Id: ISiKEKG
-* insert Meta
-* status MS
-* category MS
-* code MS
-  * coding[loinc] MS
-  * coding[snomed] MS
-* subject MS
-* encounter MS
-* effective[x] MS
-* device MS
+Description: "Dieses Profil spezifiziert die Minimalanforderungen für die Bereitstellung von Informationen über kurze, relevante EKG-Ausschnitte eines Patienten im Rahmen der interoperablen Kommunikation gemäß den Vorgaben der ISiK (Interoperable Schnittstelle im Krankenhaus). Es wurde entwickelt, um spezifische klinische Fragestellungen zu unterstützen, bei denen prägnante und gezielte EKG-Daten im Vordergrund stehen. Für vollständige und längere EKG-Aufzeichnungen sind alternative Formate vorgesehen, die für umfangreiche Daten besser geeignet sind.
+### Motivation
+Die Bereitstellung kurzer EKG-Ausschnitte ermöglicht eine präzise und effiziente Unterstützung bei der Diagnose akuter kardiologischer Fragestellungen, der Überwachung von Arrhythmien oder der Beurteilung bestimmter Ereignisse wie ST-Strecken-Veränderungen. Diese fokussierte Darstellung dient der Optimierung klinischer Entscheidungen und der schnellen Verarbeitung relevanter Daten.
+
+In FHIR wird das EKG durch die Observation-Ressource repräsentiert, wobei spezifische Anforderungen für die Darstellung und Kodierung der Daten in diesem Profil berücksichtigt werden.
+
+### Kompatibilität
+Das Profil ISiKEKG ist vom Profil [EkgDE](http://fhir.de/StructureDefinition/observation-de-ekg) aus den deutschen Basisprofilen abgeleitet."
+* insert ISiKVitalsignCommons
 * component MS
-* component.code MS
-* component.value[x] MS
+  * insert Component-MS
+//TODO MS auf sliced umstellen nach PR basisprofile mit ekg sliced
 * component.valueSampledData MS
+  * ^comment = "Motivation MS: Die EKG-Daten werden mittels des SampledData Datentyps abgebildet."
+  * ^short = "SampledData"
 * component.valueSampledData.origin MS
+  * ^comment = "Motivation MS: Das Feld `origin` definiert den Referenzpunkt und die Einheit der Messreihe, um sicherzustellen, dass die gemessenen Werte im richtigen Kontext interpretiert werden können."
+  * ^short = "Ausgangswert"
 * component.valueSampledData.period MS
+  * ^comment = "Motivation MS: Das Feld `period` definiert die zeitliche Distanz zwischen zwei aufeinanderfolgenden Messwerten."
+  * ^short = "Messintervall"
 * component.valueSampledData.dimensions MS
+  * ^comment = "Motivation MS: Das Feld `dimensions` gibt die Anzahl der Achsen oder Dimensionen an, die in der Messreihe enthalten sind, und ist notwendig, um die Struktur der Daten korrekt zu verstehen."
+  * ^short = "Dimensionen"
 * component.valueSampledData.data MS
-* performer MS
-  * ^comment = "Motivation: Dieses Feld stellt eine präzisierende Angaben zum Zweck der Qualitätsbewertung bereit"
-* method MS
-  * ^comment = "Motivation: Dieses Feld stellt eine präzisierende Angaben zum Zweck der Qualitätsbewertung bereit"
-* device MS
-  * ^comment = "Motivation: Dieses Feld stellt eine präzisierende Angaben zum Zweck der Qualitätsbewertung bereit"
-* dataAbsentReason MS
+  * ^comment = "Motivation MS: Das Feld `data` enthält die eigentlichen Messwerte der EKG-Daten."
+  * ^short = "Messwerte"
 
 Instance: ISiKEKGExample
 InstanceOf: ISiKEKG
 Usage: #example
+* meta.profile[+] = Canonical(EkgDE)
 * code.coding[loinc] = $loinc#11524-6 "EKG study"
 * code.coding[snomed] = $sct#106073009 "EKG wave, interval AND/OR segment"
 * subject = Reference(PatientinMusterfrau)
@@ -37,7 +40,6 @@ Usage: #example
 * category = $observation-category#procedure
 * device = Reference(ExampleDevice)
 * effectiveDateTime = "2019-07-02"
-
 * component[+].code = $loinc#LP7386-8 "Lead I"
 * component[=].valueSampledData.origin.value = 2048
 * component[=].valueSampledData.period = 10
