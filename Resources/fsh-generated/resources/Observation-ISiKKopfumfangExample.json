@@ -3,9 +3,7 @@
   "id": "ISiKKopfumfangExample",
   "meta": {
     "profile": [
-      "https://gematik.de/fhir/isik/StructureDefinition/ISiKKopfumfang",
-      "http://hl7.org/fhir/StructureDefinition/headcircum",
-      "http://fhir.de/StructureDefinition/observation-de-vitalsign-kopfumfang"
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKKopfumfang"
     ]
   },
   "category": [
@@ -49,5 +47,10 @@
   "subject": {
     "reference": "Patient/PatientinMusterfrau"
   },
-  "effectiveDateTime": "2019-07-02"
+  "effectiveDateTime": "2019-07-02",
+  "performer": [
+    {
+      "reference": "Practitioner/DrMustermann"
+    }
+  ]
 }

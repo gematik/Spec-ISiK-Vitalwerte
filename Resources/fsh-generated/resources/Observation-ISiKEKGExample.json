@@ -3,8 +3,7 @@
   "id": "ISiKEKGExample",
   "meta": {
     "profile": [
-      "https://gematik.de/fhir/isik/StructureDefinition/ISiKEKG",
-      "http://fhir.de/StructureDefinition/observation-de-ekg"
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKEKG"
     ]
   },
   "code": {
@@ -39,6 +38,11 @@
     "reference": "Device/ExampleDevice"
   },
   "effectiveDateTime": "2019-07-02",
+  "performer": [
+    {
+      "reference": "Practitioner/DrMustermann"
+    }
+  ],
   "component": [
     {
       "code": {

@@ -158,7 +158,7 @@
         "path": "Observation.component",
         "sliceName": "ekgLeads",
         "short": "EKG-Ableitungen",
-        "comment": "Motivation MS: Die einzelnen Ableitungen des EKG werden als component abgebildet",
+        "comment": "Motivation MS: Die einzelnen Ableitungen des EKG werden als component abgebildet. **Begründung**: Bei einer EKG Untersuchung werden mehrere Ableitungen gemeinsam erfasst und bilden zusammen das Gesamtbild des EKGs. Siehe auch [Observation.component im FHIR R4 Standard](https://hl7.org/fhir/R4//observation.html#gr-comp).",
         "mustSupport": true
       },
       {

@@ -13,9 +13,8 @@ Das Profil ISiKEKG ist vom Profil [EkgDE](http://fhir.de/StructureDefinition/obs
 * component MS
   * insert Component-MS
 * component[ekgLeads] MS
-  * ^comment = "Motivation MS: Die einzelnen Ableitungen des EKG werden als component abgebildet"
+  * ^comment = "Motivation MS: Die einzelnen Ableitungen des EKG werden als component abgebildet. **Begründung**: Bei einer EKG Untersuchung werden mehrere Ableitungen gemeinsam erfasst und bilden zusammen das Gesamtbild des EKGs. Siehe auch [Observation.component im FHIR R4 Standard](https://hl7.org/fhir/R4//observation.html#gr-comp)."
   * ^short = "EKG-Ableitungen"
-//TODO MS auf sliced umstellen nach PR basisprofile mit ekg sliced
 * component[ekgLeads].valueSampledData MS
   * ^comment = "Motivation MS: Die EKG-Daten werden mittels des SampledData Datentyps abgebildet."
   * ^short = "SampledData"
@@ -35,7 +34,6 @@ Das Profil ISiKEKG ist vom Profil [EkgDE](http://fhir.de/StructureDefinition/obs
 Instance: ISiKEKGExample
 InstanceOf: ISiKEKG
 Usage: #example
-* meta.profile[+] = Canonical(EkgDE)
 * code.coding[loinc] = $loinc#11524-6 "EKG study"
 * code.coding[snomed] = $sct#106073009 "EKG wave, interval AND/OR segment"
 * subject = Reference(PatientinMusterfrau)
@@ -43,6 +41,7 @@ Usage: #example
 * category = $observation-category#procedure
 * device = Reference(ExampleDevice)
 * effectiveDateTime = "2019-07-02"
+* performer.reference = "Practitioner/DrMustermann"
 * component[+].code = $sct#272729005 "Lead I"
 * component[=].valueSampledData.origin.value = 2048
 * component[=].valueSampledData.period = 10
