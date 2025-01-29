@@ -1,0 +1,11 @@
+{ 
+  "suppress" : [
+    "VALIDATION_VAL_PROFILE_SIGNPOST_OBS",
+    "http://hl7.org/fhir/StructureDefinition/Observation#dom-6",
+    "http://hl7.org/fhir/StructureDefinition/StructureDefinition#dom-6",
+    "http://hl7.org/fhir/StructureDefinition/ValueSet#dom-6",
+    "http://hl7.org/fhir/StructureDefinition/Patient#dom-6",
+    "SD_PATH_SLICING_DEPRECATED"
+
+  ]
+}
