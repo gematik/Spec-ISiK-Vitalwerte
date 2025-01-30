@@ -9,6 +9,7 @@ Version: 3.0.5
 
 Datum: tbd.
 
+* `improve` Das ISiKEkgExample enthielt einen veralteten Eintrag in meta.profile der die validierung verhinderte. Dieser wurde entfernt.
 * `change` Die Verbindlichkeit des Suchparameters `subject` wurde von SHALL auf MAY reduziert, da der Suchparameter `patient` für ISiK-Zwecke ausreichend ist. https://github.com/gematik/spec-ISiK-Vitalparameter-und-Koerpermasze/pull/192
 * `change` Die Verbindlichkeit von Include und RevInclude wurde von SHALL auf MAY reduziert, außer bei den Parameter `patient` und `encounter`, da diese für ISiK-Zwecke ausreichend sind. https://github.com/gematik/spec-ISiK-Vitalparameter-und-Koerpermasze/pull/192
 
