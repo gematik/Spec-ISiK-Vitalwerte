@@ -5,11 +5,11 @@
   "id": "EkgAbleitungenVS",
   "title": "SNOMED CT codes der EKG Ableitungen",
   "description": "ValueSet mit den SNOMED CT codes der EKG Ableitungen",
-  "version": "3.0.4",
+  "version": "3.0.5",
   "url": "https://gematik.de/fhir/isik/v3/VitalparameterUndKoerpermasze/ValueSet/EkgAbleitungenVS",
   "experimental": false,
   "publisher": "gematik GmbH",
-  "date": "2024-11-20",
+  "date": "2025-01-28",
   "compose": {
     "include": [
       {

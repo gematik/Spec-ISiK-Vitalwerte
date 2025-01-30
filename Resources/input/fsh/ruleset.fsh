@@ -1,15 +1,15 @@
 RuleSet: Meta
 * ^status = #active
 * ^experimental = false
-* ^version = "3.0.4"
+* ^version = "3.0.5"
 * ^publisher = "gematik GmbH"
-* ^date = "2024-11-20"
+* ^date = "2025-01-28"
 
 RuleSet: Meta-CapabilityStatement
 * status = #active
 * experimental = false
-* version = "3.0.4"
+* version = "3.0.5"
 * publisher = "gematik GmbH"
-* date = "2024-11-20"
-* implementationGuide = "https://gematik.de/fhir/isik/v3/VitalparameterUndKoerpermasze/ImplementationGuide|3.0.4"
+* date = "2025-01-28"
+* implementationGuide = "https://gematik.de/fhir/isik/v3/VitalparameterUndKoerpermasze/ImplementationGuide|3.0.5"
 * url = "https://gematik.de/fhir/isik/v3/VitalparameterUndKoerpermasze/CapabilityStatement/vitalparameter-server"

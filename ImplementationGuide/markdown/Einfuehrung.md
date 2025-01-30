@@ -1,9 +1,9 @@
 <img src="https://raw.githubusercontent.com/gematik/spec-ISiK-Vitalparameter-und-Koerpermasze/main-stufe-3/Material/images/Gematik_Logo_Flag.svg" alt="gematik logo" width="400"/>
 
 ----
-Version: 3.0.4
+Version: 3.0.5
 
-Datum: 20.11.2024
+Datum: 28.01.2025
 
 Status: Aktiv
 
