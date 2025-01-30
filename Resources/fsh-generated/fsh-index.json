@@ -37,7 +37,7 @@
     "fshType": "Instance",
     "fshFile": "ISiK-Ekg.fsh",
     "startLine": 38,
-    "endLine": 62
+    "endLine": 61
   },
   {
     "outputFile": "Observation-ISiKGCSExample.json",
@@ -188,7 +188,7 @@
     "fshName": "EkgAbleitungenVS",
     "fshType": "ValueSet",
     "fshFile": "ISiK-Ekg.fsh",
-    "startLine": 64,
-    "endLine": 82
+    "startLine": 63,
+    "endLine": 81
   }
 ]
