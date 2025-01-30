@@ -27,8 +27,6 @@ Description: "ValueSet des Körpergewichts SnomedCT Codes in ISiK"
 Instance: ISiKKoerpergewichtExample
 InstanceOf: ISiKKoerpergewicht
 Usage: #example
-* meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/bodyweight"
-* meta.profile[+] = Canonical(VitalSignDE_Koerpergewicht)
 * status = #final
 * category[VSCat] = $observation-category#vital-signs
 * code = $loinc#29463-7 "Body weight"
@@ -37,4 +35,5 @@ Usage: #example
 * code.text = "Körpergewicht"
 * subject = Reference(PatientinMusterfrau)
 * effectiveDateTime = "2020-10-11"
+* performer.reference = "Practitioner/DrMustermann"
 * valueQuantity = 79 'kg' "kilogram"

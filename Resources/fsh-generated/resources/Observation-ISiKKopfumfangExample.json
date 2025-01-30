@@ -3,9 +3,7 @@
   "id": "ISiKKopfumfangExample",
   "meta": {
     "profile": [
-      "https://gematik.de/fhir/isik/StructureDefinition/ISiKKopfumfang",
-      "http://hl7.org/fhir/StructureDefinition/headcircum",
-      "http://fhir.de/StructureDefinition/observation-de-vitalsign-kopfumfang"
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKKopfumfang"
     ]
   },
   "category": [
@@ -27,14 +25,14 @@
         "display": "Head Occipital-frontal circumference"
       },
       {
+        "system": "http://snomed.info/sct",
+        "code": "363812007",
+        "display": "Head circumference (observable entity)"
+      },
+      {
         "code": "153856",
         "system": "urn:iso:std:iso:11073:10101",
         "display": "MDC_CIRCUM_HEAD"
-      },
-      {
-        "code": "363812007",
-        "system": "http://snomed.info/sct",
-        "display": "Head circumference (observable entity)"
       }
     ],
     "text": "Kopfumfang"
@@ -49,5 +47,10 @@
   "subject": {
     "reference": "Patient/PatientinMusterfrau"
   },
-  "effectiveDateTime": "2019-07-02"
+  "effectiveDateTime": "2019-07-02",
+  "performer": [
+    {
+      "reference": "Practitioner/DrMustermann"
+    }
+  ]
 }
