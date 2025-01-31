@@ -3,8 +3,7 @@
   "id": "ISiKEkgExample",
   "meta": {
     "profile": [
-      "https://gematik.de/fhir/isik/v3/VitalparameterUndKoerpermasze/StructureDefinition/ISiKEkg",
-      "http://fhir.de/StructureDefinition/observation-de-ekg"
+      "https://gematik.de/fhir/isik/v3/VitalparameterUndKoerpermasze/StructureDefinition/ISiKEkg"
     ]
   },
   "code": {

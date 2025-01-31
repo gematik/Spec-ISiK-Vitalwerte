@@ -3,7 +3,7 @@ CapabilityStatement-ISiK-capabilityStatement-vitalparameter-server.json  ISiK-ca
 Device-ExampleDevice.json                                                ExampleDevice                                   Instance  instances.fsh                  14 - 17
 Observation-ISiKAtemfrequenzExample.json                                 ISiKAtemfrequenzExample                         Instance  ISiK-Atemfrequenz.fsh          19 - 30
 Observation-ISiKBlutdruckExample.json                                    ISiKBlutdruckExample                            Instance  ISiK-Blutdruck.fsh             27 - 44
-Observation-ISiKEkgExample.json                                          ISiKEkgExample                                  Instance  ISiK-Ekg.fsh                   38 - 62
+Observation-ISiKEkgExample.json                                          ISiKEkgExample                                  Instance  ISiK-Ekg.fsh                   38 - 61
 Observation-ISiKGCSExample.json                                          ISiKGCSExample                                  Instance  ISiK-GCS.fsh                   25 - 39
 Observation-ISiKHerzfrequenzExample.json                                 ISiKHerzfrequenzExample                         Instance  ISiK-Herzfrequenz.fsh          19 - 30
 Observation-ISiKKoerpergewichtExample.json                               ISiKKoerpergewichtExample                       Instance  ISiK-Koerpergewicht.fsh        19 - 31
@@ -22,4 +22,4 @@ StructureDefinition-ISiKKoerpergroesse.json                              ISiKKoe
 StructureDefinition-ISiKKoerpertemperatur.json                           ISiKKoerpertemperatur                           Profile   ISiK-Koerpertemperatur.fsh     1 - 17
 StructureDefinition-ISiKKopfumfang.json                                  ISiKKopfumfang                                  Profile   ISiK-Kopfumfang.fsh            1 - 17
 StructureDefinition-ISiKSauerstoffsaettigung.json                        ISiKSauerstoffsaettigung                        Profile   ISiK-Sauerstoffsaettigung.fsh  1 - 17
-ValueSet-EkgAbleitungenVS.json                                           EkgAbleitungenVS                                ValueSet  ISiK-Ekg.fsh                   64 - 82
+ValueSet-EkgAbleitungenVS.json                                           EkgAbleitungenVS                                ValueSet  ISiK-Ekg.fsh                   63 - 81

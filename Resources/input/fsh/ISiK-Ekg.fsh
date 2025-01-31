@@ -38,7 +38,6 @@ Id: ISiKEkg
 Instance: ISiKEkgExample
 InstanceOf: ISiKEkg
 Usage: #example
-* meta.profile[0] = "http://fhir.de/StructureDefinition/observation-de-ekg"
 * subject = Reference(PatientinMusterfrau)
 * status = #final
 * category = $observation-category#procedure
