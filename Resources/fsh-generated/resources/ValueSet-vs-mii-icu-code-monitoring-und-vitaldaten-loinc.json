@@ -225,11 +225,11 @@
           },
           {
             "code": "60838-0",
-            "display": "Body temperature"
+            "display": "Nasopharyngeal temperature"
           },
           {
             "code": "104063-3",
-            "display": "Body temperature"
+            "display": "Body temperature - Groin"
           }
         ]
       }
