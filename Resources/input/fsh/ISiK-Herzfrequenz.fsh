@@ -27,8 +27,6 @@ Description: "ValueSet des Herzfrequenz SnomedCT Codes in ISiK"
 Instance: ISiKHerzfrequenzExample
 InstanceOf: ISiKHerzfrequenz
 Usage: #example
-* meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/heartrate"
-* meta.profile[+] = Canonical(VitalSignDE_Herzfrequenz)
 * status = #final
 * category[VSCat] = $observation-category#vital-signs
 * code = $loinc#8867-4 "Heart rate"
@@ -37,4 +35,5 @@ Usage: #example
 * code.text = "Herzfrequenz"
 * subject = Reference(PatientinMusterfrau)
 * effectiveDateTime = "2020-10-11"
+* performer.reference = "Practitioner/DrMustermann"
 * valueQuantity = 63 '/min' "per minute"

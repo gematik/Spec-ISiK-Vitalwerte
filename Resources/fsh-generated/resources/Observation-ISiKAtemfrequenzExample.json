@@ -3,9 +3,7 @@
   "id": "ISiKAtemfrequenzExample",
   "meta": {
     "profile": [
-      "https://gematik.de/fhir/isik/StructureDefinition/ISiKAtemfrequenz",
-      "http://hl7.org/fhir/StructureDefinition/resprate",
-      "http://fhir.de/StructureDefinition/observation-de-vitalsign-atemfrequenz"
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKAtemfrequenz"
     ]
   },
   "category": [
@@ -49,5 +47,10 @@
   "subject": {
     "reference": "Patient/PatientinMusterfrau"
   },
-  "effectiveDateTime": "2019-07-02"
+  "effectiveDateTime": "2019-07-02",
+  "performer": [
+    {
+      "reference": "Practitioner/DrMustermann"
+    }
+  ]
 }

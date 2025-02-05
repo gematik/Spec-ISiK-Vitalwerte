@@ -19,8 +19,6 @@ Das Profil ISiKSauerstoffsaettigungArteriell ist vom Profil [VitalSignDE_Arterie
 Instance: ISiKSauerstoffsaettigungArteriellExample
 InstanceOf: ISiKSauerstoffsaettigungArteriell
 Usage: #example
-* meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/oxygensat"
-* meta.profile[+] = Canonical(VitalSignDE_Arterielle_Sauerstoffsaettigung)
 * status = #final
 * category[VSCat] = $observation-category#vital-signs
 * code = $loinc#2708-6 "Oxygen saturation in Arterial blood"
@@ -29,6 +27,7 @@ Usage: #example
 * code.text = "Pulsoximetrische Sauerstoffsättigung"
 * subject = Reference(PatientinMusterfrau)
 * effectiveDateTime = "2020-10-11"
+* performer.reference = "Practitioner/DrMustermann"
 * valueQuantity = 98 '%' "%"
 * component[0].code.coding[0] = $loinc#3151-8 "Inhaled oxygen flow rate"
 * component[=].code.coding[+] = $sct#427081008 "Delivered oxygen flow rate"
