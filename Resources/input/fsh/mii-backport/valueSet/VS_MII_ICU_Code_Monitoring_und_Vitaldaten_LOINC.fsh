@@ -55,5 +55,5 @@ Description: "Dieses ValueSet enthält Codes für Vitaldaten sowie Daten aus dem
 * LOINC#61009-7 "Myocardial temperature"
 * LOINC#76010-8 "Nasal temperature"
 * LOINC#8310-5 "Body temperature"
-* LOINC#60838-0 "Body temperature"
+* LOINC#60838-0 "Nasopharyngeal temperature"
 * LOINC#104063-3 "Body temperature"
