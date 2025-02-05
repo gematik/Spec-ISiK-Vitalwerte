@@ -173,7 +173,7 @@
           },
           {
             "code": "150372",
-            "display": "MDC_TEMP_ESOPH"
+            "display": "Esophageal temperature"
           },
           {
             "code": "150380",
@@ -184,14 +184,16 @@
             "display": "Axillary (armpit) temperature"
           },
           {
-            "code": "150324"
+            "code": "150324",
+            "display": "Arterial oxygen saturation"
           },
           {
             "code": "188796",
             "display": "Ideal body weight (IBW)"
           },
           {
-            "code": "150392"
+            "code": "150392",
+            "display": "Tympanic temperature"
           },
           {
             "code": "150356",
