@@ -35,6 +35,7 @@ jobs:
           # Exclude all links in the "Material" directory.
           args: >
             .
+            --no-method HEAD
             --exclude-path ImplementationGuide/style
             --exclude-path Material
             --cache
