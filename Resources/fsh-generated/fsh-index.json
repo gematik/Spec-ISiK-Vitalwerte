@@ -5,7 +5,7 @@
     "fshType": "Instance",
     "fshFile": "ISiK-CapabilityStatement-Hospital.fsh",
     "startLine": 1,
-    "endLine": 134
+    "endLine": 143
   },
   {
     "outputFile": "CapabilityStatement-ISiKCapabilityStatementVitalparameterServerPDMS.json",
@@ -472,6 +472,22 @@
     "endLine": 12
   },
   {
+    "outputFile": "StructureDefinition-ISiKASKCoding.json",
+    "fshName": "ISiKASKCoding",
+    "fshType": "Profile",
+    "fshFile": "ISiKDataTypeProfiles.fsh",
+    "startLine": 46,
+    "endLine": 54
+  },
+  {
+    "outputFile": "StructureDefinition-ISiKATCCoding.json",
+    "fshName": "ISiKATCCoding",
+    "fshType": "Profile",
+    "fshFile": "ISiKDataTypeProfiles.fsh",
+    "startLine": 56,
+    "endLine": 64
+  },
+  {
     "outputFile": "StructureDefinition-ISiKAtemfrequenz.json",
     "fshName": "ISiKAtemfrequenz",
     "fshType": "Profile",
@@ -486,6 +502,14 @@
     "fshFile": "ISiK-Blutdruck.fsh",
     "startLine": 1,
     "endLine": 69
+  },
+  {
+    "outputFile": "StructureDefinition-ISiKCoding.json",
+    "fshName": "ISiKCoding",
+    "fshType": "Profile",
+    "fshFile": "ISiKDataTypeProfiles.fsh",
+    "startLine": 3,
+    "endLine": 11
   },
   {
     "outputFile": "StructureDefinition-ISiKEKG.json",
@@ -510,6 +534,14 @@
     "fshFile": "ISiK-Herzfrequenz.fsh",
     "startLine": 1,
     "endLine": 18
+  },
+  {
+    "outputFile": "StructureDefinition-ISiKICD10GMCoding.json",
+    "fshName": "ISiKICD10GMCoding",
+    "fshType": "Profile",
+    "fshFile": "ISiKDataTypeProfiles.fsh",
+    "startLine": 35,
+    "endLine": 44
   },
   {
     "outputFile": "StructureDefinition-ISiKKoerpergewicht.json",
@@ -544,12 +576,36 @@
     "endLine": 20
   },
   {
+    "outputFile": "StructureDefinition-ISiKLoincCoding.json",
+    "fshName": "ISiKLoincCoding",
+    "fshType": "Profile",
+    "fshFile": "ISiKDataTypeProfiles.fsh",
+    "startLine": 23,
+    "endLine": 30
+  },
+  {
+    "outputFile": "StructureDefinition-ISiKPZNCoding.json",
+    "fshName": "ISiKPZNCoding",
+    "fshType": "Profile",
+    "fshFile": "ISiKDataTypeProfiles.fsh",
+    "startLine": 66,
+    "endLine": 74
+  },
+  {
     "outputFile": "StructureDefinition-ISiKSauerstoffsaettigungArteriell.json",
     "fshName": "ISiKSauerstoffsaettigungArteriell",
     "fshType": "Profile",
     "fshFile": "ISiK-Sauerstoffsaettigung.fsh",
     "startLine": 1,
     "endLine": 17
+  },
+  {
+    "outputFile": "StructureDefinition-ISiKSnomedCTCoding.json",
+    "fshName": "ISiKSnomedCTCoding",
+    "fshType": "Profile",
+    "fshFile": "ISiKDataTypeProfiles.fsh",
+    "startLine": 13,
+    "endLine": 21
   },
   {
     "outputFile": "StructureDefinition-sd-mii-icu-herzzeitvolumen.json",

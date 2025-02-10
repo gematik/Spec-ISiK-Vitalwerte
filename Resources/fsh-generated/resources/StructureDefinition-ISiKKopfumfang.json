@@ -6,7 +6,7 @@
   "name": "ISiKKopfumfang",
   "status": "active",
   "experimental": false,
-  "date": "2025-01-28",
+  "date": "2025-01-30",
   "publisher": "gematik GmbH",
   "description": "Dieses Profil spezifiziert die Minimalanforderungen für die Bereitstellung von Informationen über den Kopfumfang eines Patienten im Rahmen der interoperablen Kommunikation gemäß den Vorgaben der ISiK (Interoperable Schnittstelle im Krankenhaus).\n### Motivation\nDie Erfassung und Überwachung des Kopfumfangs ist essenziell für die Beurteilung von Wachstumsprozessen, insbesondere bei Säuglingen und Kleinkindern, sowie für die frühzeitige Erkennung von Entwicklungsauffälligkeiten oder neurologischen Erkrankungen.\n\nIn FHIR wird der Kopfumfang mit der Observation-Ressource repräsentiert.\n\n### Kompatibilität\nDas Profil ISiKKopfumfang ist vom Profil [VitalSignDE_Kopfumfang](http://fhir.de/StructureDefinition/observation-de-vitalsign-kopfumfang) aus den deutschen Basisprofilen abgeleitet. Es ist kompatibel mit dem Profil [Observation Head Circumference Profile](\nhttp://hl7.org/fhir/StructureDefinition/headcircum) aus der FHIR R4 Spezifikation.",
   "fhirVersion": "4.0.1",
@@ -51,6 +51,14 @@
         "path": "Observation.code.coding",
         "short": "Coding",
         "comment": "Motivation MS: Semantische Kodierung",
+        "type": [
+          {
+            "code": "Coding",
+            "profile": [
+              "https://gematik.de/fhir/isik/StructureDefinition/ISiKCoding"
+            ]
+          }
+        ],
         "mustSupport": true
       },
       {
@@ -59,6 +67,14 @@
         "sliceName": "loinc",
         "short": "LOINC Kodierung",
         "comment": "Motivation MS: Kodierung des Vitalparameters mittels LOINC.",
+        "type": [
+          {
+            "code": "Coding",
+            "profile": [
+              "https://gematik.de/fhir/isik/StructureDefinition/ISiKLoincCoding"
+            ]
+          }
+        ],
         "mustSupport": true
       },
       {
@@ -67,6 +83,14 @@
         "sliceName": "snomed",
         "short": "SNOMED CT Kodierung",
         "comment": "Motivation MS: Kodierung des Vitalparameters mittels SNOMED CT.",
+        "type": [
+          {
+            "code": "Coding",
+            "profile": [
+              "https://gematik.de/fhir/isik/StructureDefinition/ISiKSnomedCTCoding"
+            ]
+          }
+        ],
         "mustSupport": true,
         "binding": {
           "strength": "required",
