@@ -1,19 +1,27 @@
 [
   {
-    "outputFile": "CapabilityStatement-ISiKCapabilityStatementVitalparameterServerHospital.json",
-    "fshName": "ISiKCapabilityStatementVitalparameterServerHospital",
+    "outputFile": "CapabilityStatement-ISiKCapabilityStatementMinimalAdministrativeDataSource.json",
+    "fshName": "ISiKCapabilityStatementMinimalAdministrativeDataSource",
     "fshType": "Instance",
-    "fshFile": "ISiK-CapabilityStatement-Hospital.fsh",
+    "fshFile": "ISiK-CapabilityStatement-MinimalAdministrativeDataSource.fsh",
     "startLine": 1,
-    "endLine": 143
+    "endLine": 130
   },
   {
-    "outputFile": "CapabilityStatement-ISiKCapabilityStatementVitalparameterServerPDMS.json",
-    "fshName": "ISiKCapabilityStatementVitalparameterServerPDMS",
+    "outputFile": "CapabilityStatement-ISiKCapabilityStatementVitalSignICUSource.json",
+    "fshName": "ISiKCapabilityStatementVitalSignICUSource",
     "fshType": "Instance",
-    "fshFile": "ISiK-CapabilityStatement-PDMS.fsh",
+    "fshFile": "ISiK-CapabilityStatementVitalSignICUSource.fsh",
     "startLine": 1,
     "endLine": 164
+  },
+  {
+    "outputFile": "CapabilityStatement-ISiKCapabilityStatementVitalSignStandardSource.json",
+    "fshName": "ISiKCapabilityStatementVitalSignStandardSource",
+    "fshType": "Instance",
+    "fshFile": "ISiK-CapabilityStatementVitalSignStandardSource.fsh",
+    "startLine": 1,
+    "endLine": 143
   },
   {
     "outputFile": "Device-ExampleDevice.json",

@@ -1,8 +1,8 @@
-Instance: ISiKCapabilityStatementVitalparameterServerHospital
+Instance: ISiKCapabilityStatementVitalSignStandardSource
 InstanceOf: CapabilityStatement
 Usage: #definition
 * insert Meta-CapabilityStatement
-* name = "ISiKCapabilityStatementVitalparameterServerHospital"
+* name = "ISiKCapabilityStatementVitalSignStandardSource"
 * title = "ISiK CapabilityStatement Vitalparameter Server Hospital"
 * contact.telecom.system = #url
 * contact.telecom.value = "https://www.gematik.de"
@@ -21,7 +21,7 @@ Usage: #definition
 * fhirVersion = #4.0.1
 * format[0] = #application/fhir+xml
 * format[+] = #application/fhir+json
-* instantiates = Canonical(ISiKCapabilityStatementVitalparameterServerHospital)
+* instantiates = Canonical(ISiKCapabilityStatementVitalSignStandardSource)
 * rest.mode = #server
 * rest.resource[+]
 * rest.resource[=].extension.url = $capabilitystatement-expectation

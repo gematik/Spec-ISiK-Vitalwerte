@@ -1,8 +1,8 @@
-Instance: ISiKCapabilityStatementVitalparameterServerPDMS
+Instance: ISiKCapabilityStatementVitalSignICUSource
 InstanceOf: CapabilityStatement
 Usage: #definition
 * insert Meta-CapabilityStatement
-* name = "ISiKCapabilityStatementVitalparameterServerPDMS"
+* name = "ISiKCapabilityStatementVitalSignICUSource"
 * title = "ISiK CapabilityStatement Vitalparameter Server PDMS"
 * contact.telecom.system = #url
 * contact.telecom.value = "https://www.gematik.de"
@@ -12,7 +12,7 @@ Usage: #definition
 * fhirVersion = #4.0.1
 * format[0] = #application/fhir+xml
 * format[+] = #application/fhir+json
-* instantiates = Canonical(ISiKCapabilityStatementVitalparameterServerPDMS)
+* instantiates = Canonical(ISiKCapabilityStatementVitalSignICUSource)
 * rest.mode = #server
 * rest.resource[+]
 * rest.resource[=].extension.url = $capabilitystatement-expectation
