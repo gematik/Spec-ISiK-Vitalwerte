@@ -9,7 +9,7 @@
   "url": "https://gematik.de/fhir/isik/ValueSet/vs-mii-icu-code-monitoring-und-vitaldaten-snomed",
   "experimental": false,
   "publisher": "gematik GmbH",
-  "date": "2024-12-04",
+  "date": "2025-02-10",
   "compose": {
     "include": [
       {
@@ -166,6 +166,10 @@
           {
             "code": "442476006",
             "display": "Arterial oxygen saturation (observable entity)"
+          },
+          {
+            "code": "364090009",
+            "display": "Systemic arterial pressure (observable entity)"
           }
         ]
       }

@@ -3,9 +3,7 @@
   "id": "ISiKBlutdruckSystemischArteriellExample",
   "meta": {
     "profile": [
-      "https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell",
-      "http://hl7.org/fhir/StructureDefinition/bp",
-      "http://fhir.de/StructureDefinition/observation-de-vitalsign-blutdruck"
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell"
     ]
   },
   "category": [

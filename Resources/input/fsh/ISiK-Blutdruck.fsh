@@ -71,8 +71,6 @@ Das Profil ISiKBlutdruckSystemischArteriell ist vom Profil [VitalSignDE_Blutdruc
 Instance: ISiKBlutdruckSystemischArteriellExample
 InstanceOf: ISiKBlutdruckSystemischArteriell
 Usage: #example
-* meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/bp"
-* meta.profile[+] = "http://fhir.de/StructureDefinition/observation-de-vitalsign-blutdruck"
 * status = #final
 * category[VSCat] = $observation-category#vital-signs "Vital Signs"
 * code = $loinc#85354-9 "Blood pressure panel with all children optional"

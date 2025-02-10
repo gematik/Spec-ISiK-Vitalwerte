@@ -27,8 +27,6 @@ Description: "ValueSet des Körpergewicht SnomedCT Codes in ISiK"
 Instance: ISiKKoerpertemperaturExample
 InstanceOf: ISiKKoerpertemperatur
 Usage: #example
-* meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/bodytemp"
-* meta.profile[+] = Canonical(VitalSignDE_Koerpertemperatur)
 * status = #final
 * category[VSCat] = $observation-category#vital-signs
 * code = $loinc#8310-5 "Body temperature"
@@ -37,4 +35,5 @@ Usage: #example
 * code.text = "Körpertemperatur"
 * subject = Reference(PatientinMusterfrau)
 * effectiveDateTime = "2020-10-11"
+* performer.reference = "Practitioner/DrMustermann"
 * valueQuantity = 36.8 'Cel' "°C"
