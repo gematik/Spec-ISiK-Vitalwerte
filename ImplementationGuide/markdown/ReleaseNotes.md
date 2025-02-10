@@ -8,6 +8,7 @@ Version: 4.0.1
 
 Datum: tbd.
 
+* Einführung der Datentypprofile für Coding Datentypen: ISiKCoding, ISiKSnomedCTCoding & ISiKLoincCoding aus dem ISiK Basisprofil-Modul https://github.com/gematik/spec-ISiK-Vitalparameter-und-Koerpermasze/pull/159  
 * Update der Abhängigkeit zu den Basisprofilen auf Version 1.5.1 - https://github.com/gematik/spec-ISiK-Vitalparameter-und-Koerpermasze/pull/195:
   * Einführung eines neuen, SnomedCT basierten, VS bindings für EKG-Ableitungen. Die bisher verwendeten LOINC Codes waren LP Codes, welche nicht zur Verwendung in Instanzen bestimmt sind. Die alten Codes sind weiterhin valide, aber per Slice als deprecated markiert.
   * Statt eines patterns für Observation.code werden die "magic-loinc-codes" nun per verpflichtendem Slice erzwungen.
