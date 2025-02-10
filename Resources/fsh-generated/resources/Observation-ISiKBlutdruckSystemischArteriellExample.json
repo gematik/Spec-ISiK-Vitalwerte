@@ -49,7 +49,8 @@
           {
             "code": "271649006",
             "system": "http://snomed.info/sct",
-            "display": "Systolischer Blutdruck"
+            "display": "Systolischer Blutdruck",
+            "version": "http://snomed.info/sct/11000274103"
           },
           {
             "system": "http://loinc.org",
@@ -75,7 +76,8 @@
           {
             "code": "271650006",
             "system": "http://snomed.info/sct",
-            "display": "Diastolischer Blutdruck"
+            "display": "Diastolischer Blutdruck",
+            "version": "http://snomed.info/sct/11000274103"
           },
           {
             "system": "http://loinc.org",
@@ -101,7 +103,8 @@
           {
             "code": "6797001",
             "system": "http://snomed.info/sct",
-            "display": "Mittlerer arterieller Druck"
+            "display": "Mittlerer arterieller Druck",
+            "version": "http://snomed.info/sct/11000274103"
           },
           {
             "system": "http://loinc.org",

@@ -86,12 +86,15 @@ Usage: #example
 * component[SystolicBP]
   * code.coding[IEEE11073] = $IEEE11073#150017 "MDC_PRESS_BLD_SYS"
   * code.coding[SCT] = $sct#271649006 "Systolischer Blutdruck"
+    * version = "http://snomed.info/sct/11000274103"
   * valueQuantity = 107 'mm[Hg]' "mmHg"
 * component[DiastolicBP]
   * code.coding[IEEE11073] = $IEEE11073#150018 "MDC_PRESS_BLD_DIA"
   * code.coding[SCT] = $sct#271650006 "Diastolischer Blutdruck"
+    * version = "http://snomed.info/sct/11000274103"
   * valueQuantity = 60 'mm[Hg]' "mmHg"
 * component[meanBP]
   * code.coding[IEEE11073] = $IEEE11073#150019 "MDC_PRESS_BLD_MEAN"
   * code.coding[SCT] = $sct#6797001 "Mittlerer arterieller Druck"
+    * version = "http://snomed.info/sct/11000274103"
   * valueQuantity = 80 'mm[Hg]' "mmHg"

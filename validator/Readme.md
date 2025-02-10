@@ -6,7 +6,5 @@ The [CI pipeline]((https://github.com/gematik/spec-ISiK-Terminplanung/blob/main-
 
 To facilitate easier identification of issues within profiles, ValueSets, CodeSystems, and examples, the validation pipeline aims to remain "clean." This means the validation output should be free of errors, warnings, and unnecessary informational messages, as cluttered outputs can obscure critical issues. The validator supports this goal through its ["advisor" framework]((https://confluence.hl7.org/display/FHIR/Validator+Advisor+Framework)), which allows specific messages to be suppressed. All suppressions are defined in the advisor.json file, located alongside this README. The following messages have been suppressed for the current ISiK module:
 
-* http://hl7.org/fhir/StructureDefinition/Observation#dom-6 - ISiK resources do not contain a narrative. Ignore this best practice warning for now.
-* http://hl7.org/fhir/StructureDefinition/StructureDefinition#dom-6 - ISiK resources do not contain a narrative. Ignore this best practice warning for now.
-* http://hl7.org/fhir/StructureDefinition/ValueSet#dom-6 - ISiK resources do not contain a narrative. Ignore this best practice warning for now.
-* http://hl7.org/fhir/StructureDefinition/Patient#dom-6 - ISiK resources do not contain a narrative. Ignore this best practice warning for now.
+* All filters containing: #dom-6 - ISiK resources do not contain a narrative. Ignore this best practice warning for now.
+* 
