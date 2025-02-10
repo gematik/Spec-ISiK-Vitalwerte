@@ -9,7 +9,7 @@
   "url": "https://gematik.de/fhir/isik/ValueSet/vs-mii-icu-code-monitoring-und-vitaldaten-iso11073",
   "experimental": false,
   "publisher": "gematik GmbH",
-  "date": "2024-12-04",
+  "date": "2025-02-10",
   "compose": {
     "include": [
       {
@@ -172,16 +172,32 @@
             "display": "Pulse rate"
           },
           {
-            "code": "150356",
-            "display": "MDC_TEMP_AWAY"
+            "code": "150372",
+            "display": "Esophageal temperature"
           },
           {
-            "code": "150372",
-            "display": "MDC_TEMP_ESOPH"
+            "code": "150380",
+            "display": "Nasopharynx temperature"
+          },
+          {
+            "code": "188452",
+            "display": "Axillary (armpit) temperature"
+          },
+          {
+            "code": "150324",
+            "display": "Arterial oxygen saturation"
           },
           {
             "code": "188796",
-            "display": "MDC_MASS_BODY_EST_IBW"
+            "display": "Ideal body weight (IBW)"
+          },
+          {
+            "code": "150392",
+            "display": "Tympanic temperature"
+          },
+          {
+            "code": "150356",
+            "display": "Airway temperature"
           }
         ]
       }
