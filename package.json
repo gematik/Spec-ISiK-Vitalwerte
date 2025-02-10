@@ -6,6 +6,8 @@
     "4.0.1"
   ],
   "dependencies": {
+    //FIXME: delete direct dependency after de.gematik.isik-basismodul contains the dependency
+    "de.basisprofil.r4": "1.5.2",
     "de.gematik.isik-basismodul": "4.0.x"
   }
 }
