@@ -28,6 +28,7 @@ jobs:
 
         with:  
           fail: true
+          debug: true
           # Configure the workflow to fail if broken links are found.
           # Run the link checker on the current directory and all its contents.
           # Exclude links matching the pattern for Jira links (e.g., HL7 Jira).
@@ -39,5 +40,3 @@ jobs:
             --exclude-path Material
             --cache
             --max-concurrency 5
-           
-      
