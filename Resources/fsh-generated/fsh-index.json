@@ -1053,7 +1053,7 @@
     "fshType": "ValueSet",
     "fshFile": "mii-backport/valueSet/VS_MII_ICU_Code_Monitoring_und_Vitaldaten_ISO11073.fsh",
     "startLine": 1,
-    "endLine": 47
+    "endLine": 51
   },
   {
     "outputFile": "ValueSet-vs-mii-icu-code-monitoring-und-vitaldaten-loinc.json",
@@ -1061,7 +1061,7 @@
     "fshType": "ValueSet",
     "fshFile": "mii-backport/valueSet/VS_MII_ICU_Code_Monitoring_und_Vitaldaten_LOINC.fsh",
     "startLine": 1,
-    "endLine": 57
+    "endLine": 59
   },
   {
     "outputFile": "ValueSet-vs-mii-icu-code-monitoring-und-vitaldaten-snomed.json",
@@ -1069,7 +1069,7 @@
     "fshType": "ValueSet",
     "fshFile": "mii-backport/valueSet/VS_MII_ICU_Code_Monitoring_und_Vitaldaten_SNOMED.fsh",
     "startLine": 1,
-    "endLine": 43
+    "endLine": 44
   },
   {
     "outputFile": "ValueSet-vs-mii-icu-method-observation-blutdruck.json",

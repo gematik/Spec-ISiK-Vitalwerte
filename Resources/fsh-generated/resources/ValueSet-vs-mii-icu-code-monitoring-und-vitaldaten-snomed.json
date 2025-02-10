@@ -166,6 +166,10 @@
           {
             "code": "442476006",
             "display": "Arterial oxygen saturation (observable entity)"
+          },
+          {
+            "code": "364090009",
+            "display": "Systemic arterial pressure (observable entity)"
           }
         ]
       }
