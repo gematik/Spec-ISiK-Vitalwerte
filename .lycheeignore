@@ -30,3 +30,5 @@
 ^https://simplifier.net/isik-vitalparameter-v4/Puls
 ^https://ig.fhir.de/basisprofile-de/1.2.0/Ressourcen-VerweiseaufExterneLeitfaeden.html#SignaldatenObservation
 ^https://ig.fhir.de/basisprofile-de/1.2.0/Ressourcen-Observation-VitalParameter.html
+https://confluence.hl7.org/display/FHIR/Validator+Advisor+Framework
+https://confluence.hl7.org/display/FHIR/Using+the+FHIR+Validator
