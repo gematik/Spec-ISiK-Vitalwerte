@@ -30,8 +30,6 @@ Description: "ValueSet des Kopfumfang SnomedCT Codes in ISiK"
 Instance: ISiKKopfumfangExample
 InstanceOf: ISiKKopfumfang
 Usage: #example
-* meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/headcircum"
-* meta.profile[+] = Canonical(VitalSignDE_Kopfumfang)
 * status = #final
 * category[VSCat] = $observation-category#vital-signs "Vital Signs"
 * code = $loinc#9843-4 "Head Occipital-frontal circumference"
@@ -40,4 +38,5 @@ Usage: #example
 * code.text = "Kopfumfang"
 * subject = Reference(PatientinMusterfrau)
 * effectiveDateTime = "2019-07-02"
+* performer.reference = "Practitioner/DrMustermann"
 * valueQuantity = 38 'cm' "Centimeter"

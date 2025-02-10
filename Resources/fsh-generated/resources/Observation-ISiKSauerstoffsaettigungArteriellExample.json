@@ -3,9 +3,7 @@
   "id": "ISiKSauerstoffsaettigungArteriellExample",
   "meta": {
     "profile": [
-      "https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell",
-      "http://hl7.org/fhir/StructureDefinition/oxygensat",
-      "http://fhir.de/StructureDefinition/observation-de-vitalsign-sauerstoffsaettigung"
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell"
     ]
   },
   "category": [
@@ -96,5 +94,10 @@
   "subject": {
     "reference": "Patient/PatientinMusterfrau"
   },
-  "effectiveDateTime": "2020-10-11"
+  "effectiveDateTime": "2020-10-11",
+  "performer": [
+    {
+      "reference": "Practitioner/DrMustermann"
+    }
+  ]
 }

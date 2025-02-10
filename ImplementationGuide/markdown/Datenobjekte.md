@@ -4,9 +4,8 @@ Folgende Datenobjekte und Interaktionen aus dem Modul [ISiK Basis](https://simpl
 * [Patient](https://simplifier.net/guide/isik-basis-v4/ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Patient?version=current)
 * [Kontakt/Fall (Encounter)](https://simplifier.net/guide/isik-basis-v4/ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Kontakt?version=current)
 
-Die Verwendung in diesem Modul bedeutet:
-Wenn dieses Modul auf Datenobjekte aus dem Basismodul referenziert, dann MÜSSEN die referenzierten FHIR-Ressourcen konform zu den Vorgaben aus dem Basismodul sein. 
-Die Referenzierung von im Basismodul spezifizierten Datenobjekten, bedeutet nicht, dass die Interaktionen für die entsprechenden Datenobjekte aus dem Basismodul auch im Modul Vitalparameter und Körpermaße bestätigungsrelevant sind.
+Die Verwendung der genannten Ressourcen in diesem Modul bedeutet:
+Wenn ein Profil aus diesem Modul auf die genannten Datenobjekte aus dem Basismodul referenziert, dann MÜSSEN die referenzierten FHIR-Ressourcen im ISiK-Kontext konform zu Vorgaben an diese Ressourcen aus dem Basismodul sein (Profilkonformität). Die konkreten Vorgaben zu Interaktionen und Abhängigkeiten zwischen Modulen werden noch präzisiert.
 
 Darüber hinaus gelten in diesem Modul folgende Datenobjekt-spezifische Festlegungen:
 

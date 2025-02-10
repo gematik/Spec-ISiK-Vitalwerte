@@ -20,8 +20,6 @@ Das Profil ISiKAtemfrequenz ist vom Profil [VitalSignDE_Atemfrequenz](http://fhi
 Instance: ISiKAtemfrequenzExample
 InstanceOf: ISiKAtemfrequenz
 Usage: #example
-* meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/resprate"
-* meta.profile[+] = Canonical(VitalSignDE_Atemfrequenz)
 * status = #final
 * category[VSCat] = $observation-category#vital-signs "Vital Signs"
 * code = $loinc#9279-1 "Respiratory rate"
@@ -30,4 +28,5 @@ Usage: #example
 * code.text = "Atemfrequenz"
 * subject = Reference(PatientinMusterfrau)
 * effectiveDateTime = "2019-07-02"
+* performer.reference = "Practitioner/DrMustermann"
 * valueQuantity = 26 '/min' "Atemzüge pro Minute"
