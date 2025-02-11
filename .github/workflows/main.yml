@@ -57,34 +57,40 @@ jobs:
         run: |
           sudo apt-get install -y pandoc
 
-          # Entferne nur die erste Tabelle basierend auf <table class="grid">
+          # Remove only the first table using <table class="grid"> and </table>
           awk '
             BEGIN {skip=0; table_removed=0}
 
-            # Erkenne den Start der ersten Tabelle
+            # Detect the start of the first table
             /<table class="grid">/ {
                 if (table_removed == 0) {
-                    skip=1  # Starte das Überspringen
-                    next    # Überspringe diese Zeile
+                    skip=1  # Start skipping
+                    next    # Skip this line
                 }
             }
 
-            # Erkenne das Ende der Tabelle
+            # Detect the end of the first table
             skip && /<\/table>/ {
                 if (table_removed == 0) {
-                    skip=0  # Beende das Überspringen
-                    table_removed=1  # Stelle sicher, dass nur die erste Tabelle entfernt wird
-                    next  # Diese Zeile ebenfalls überspringen
+                    skip=0  # Stop skipping
+                    table_removed=1  # Ensure only the first table is removed
+                    next  # Skip this line
                 }
             }
 
-            # Falls im "skip"-Modus, überspringe Zeilen
+            # Skip lines if inside the table
             skip {next}
 
-            # Drucke die restlichen Zeilen normal aus
+            # Print everything else
             {print}
           ' validation.html | pandoc -f html -t markdown_strict | awk '
-            # Ersetze "Severity"-Einträge mit Emojis
+            # Reduce heading size: ## -> ####
+            /^## / {gsub(/^## /, "#### ")}
+
+            # Remove all <strong> and </strong> tags (works for inline and block-level)
+            {gsub(/<strong>/, ""); gsub(/<\/strong>/, "")}  
+
+            # Replace "Severity" column values with emojis
             /error/ {gsub("error", "❌ error")}
             /warning/ {gsub("warning", "⚠️ warning")}
             /information/ {gsub("information", "ℹ️ information")}
@@ -92,7 +98,7 @@ jobs:
             /Process Info/ {gsub("Process Info", "🔹 Process Info")}
             /Slicing Information/ {gsub("Slicing Information", "✂️ Slicing Info")}
 
-            # Drucke den verbleibenden Inhalt
+            # Print final output
             {print}
           ' >> $GITHUB_STEP_SUMMARY
 
