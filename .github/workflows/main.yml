@@ -57,25 +57,41 @@ jobs:
         run: |
           sudo apt-get install -y pandoc
 
-          # Verwandle HTML in Markdown & entferne die erste Tabelle
+          # Convert HTML to Markdown and remove only the first table
           pandoc -f html -t markdown_strict validation.html | awk '
-            BEGIN {skip=1}
+            BEGIN {skip=0; table_removed=0}
           
-            # Entferne die erste Tabelle (Übersicht der Fehler/Warnungen)
-            /Filename[[:space:]]+Errors[[:space:]]+Warnings[[:space:]]+Hints/ {skip=1}
-            skip && /^-+$/ {skip=0; next}  # Ignoriere alle Zeilen bis zur Trennlinie
-            skip {next}  # Überspringe diese Zeilen
-          
-            # Ersetze "Severity"-Einträge mit Emojis
+            # Detect the start of the first table
+            /Filename[[:space:]]+Errors[[:space:]]+Warnings[[:space:]]+Hints/ {
+                if (table_removed == 0) {
+                    skip=1  # Start skipping lines
+                }
+            }
+
+            # Detect the end of the table (next separator line)
+            skip && /^-+$/ {
+                if (table_removed == 0) {
+                    skip=0  # Stop skipping lines
+                    table_removed=1  # Ensure only the first table is removed
+                    next  # Skip this line
+                }
+            }
+
+            # If skipping, do not print
+            skip {next}
+
+            # Replace severity labels with emojis
             /error/ {gsub("error", "❌ error")}
             /warning/ {gsub("warning", "⚠️ warning")}
             /information/ {gsub("information", "ℹ️ information")}
             /hint/ {gsub("hint", "ℹ️ hint")}
             /Process Info/ {gsub("Process Info", "🔹 Process Info")}
             /Slicing Information/ {gsub("Slicing Information", "✂️ Slicing Info")}
-          
+
+            # Print the remaining content
             {print $0}
           ' >> $GITHUB_STEP_SUMMARY
+
 
 
       - name: Add & Commit
