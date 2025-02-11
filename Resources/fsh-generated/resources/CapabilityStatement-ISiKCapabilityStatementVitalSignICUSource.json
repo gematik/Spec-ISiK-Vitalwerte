@@ -1,16 +1,16 @@
 {
   "resourceType": "CapabilityStatement",
-  "id": "ISiKCapabilityStatementVitalparameterServerPDMS",
-  "url": "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementVitalparameterServerPDMS",
+  "id": "ISiKCapabilityStatementVitalSignICUSource",
+  "url": "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementVitalSignICUSource",
   "status": "active",
   "experimental": false,
   "version": "4.0.1",
   "publisher": "gematik GmbH",
-  "date": "2025-01-30",
+  "date": "2025-02-11",
   "implementationGuide": [
     "https://gematik.de/fhir/isik/ImplementationGuide/ISiK-Vitalparameter|4.0.1"
   ],
-  "name": "ISiKCapabilityStatementVitalparameterServerPDMS",
+  "name": "ISiKCapabilityStatementVitalSignICUSource",
   "title": "ISiK CapabilityStatement Vitalparameter Server PDMS",
   "contact": [
     {
@@ -41,7 +41,7 @@
     "application/fhir+json"
   ],
   "instantiates": [
-    "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementVitalparameterServerPDMS"
+    "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementVitalSignICUSource"
   ],
   "rest": [
     {

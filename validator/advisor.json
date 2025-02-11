@@ -6,6 +6,7 @@
     "http://hl7.org/fhir/StructureDefinition/Patient#dom-6",
     "http://hl7.org/fhir/StructureDefinition/Observation#dom-6",
     "http://hl7.org/fhir/StructureDefinition/Device#dom-6",
+    "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6",
     "SD_PATH_SLICING_DEPRECATED",
     "Terminology_TX_NoValid_2_CC@Observation.component.code",
     "Terminology_TX_Confirm_5@Observation.component[0].value.ofType(Quantity)"

@@ -1,16 +1,16 @@
 {
   "resourceType": "CapabilityStatement",
-  "id": "ISiKCapabilityStatementVitalparameterServerHospital",
-  "url": "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementVitalparameterServerHospital",
+  "id": "ISiKCapabilityStatementVitalSignStandardSource",
+  "url": "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementVitalSignStandardSource",
   "status": "active",
   "experimental": false,
   "version": "4.0.1",
   "publisher": "gematik GmbH",
-  "date": "2025-01-30",
+  "date": "2025-02-11",
   "implementationGuide": [
     "https://gematik.de/fhir/isik/ImplementationGuide/ISiK-Vitalparameter|4.0.1"
   ],
-  "name": "ISiKCapabilityStatementVitalparameterServerHospital",
+  "name": "ISiKCapabilityStatementVitalSignStandardSource",
   "title": "ISiK CapabilityStatement Vitalparameter Server Hospital",
   "contact": [
     {
@@ -41,7 +41,7 @@
     "application/fhir+json"
   ],
   "instantiates": [
-    "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementVitalparameterServerHospital"
+    "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementVitalSignStandardSource"
   ],
   "rest": [
     {
