@@ -57,8 +57,29 @@ jobs:
         run: |
           sudo apt-get install -y pandoc
 
-          # Entferne die erste Tabelle und konvertiere HTML zu Markdown
-          sed '0,/<table class="grid">/d;/<\/table>/,${//d}' validation.html | pandoc -f html -t markdown_strict | awk '
+          # Konvertiere HTML in Markdown & entferne die erste Tabelle
+          pandoc -f html -t markdown_strict validation.html | awk '
+            BEGIN {skip=0; table_removed=0}
+
+            # Erkenne den Start der ersten Tabelle und aktiviere "skip"-Modus
+            /^Filename[[:space:]]+Errors[[:space:]]+Warnings[[:space:]]+Hints/ {
+                if (table_removed == 0) {
+                    skip=1  # Starte das Überspringen
+                }
+            }
+
+            # Erkenne das Ende der Tabelle anhand der Trennlinie
+            skip && /^-+$/ {
+                if (table_removed == 0) {
+                    skip=0  # Beende das Überspringen
+                    table_removed=1  # Stelle sicher, dass nur die erste Tabelle entfernt wird
+                    next  # Überspringe diese Zeile
+                }
+            }
+
+            # Falls im "skip"-Modus, überspringe Zeile
+            skip {next}
+
             # Ersetze "Severity"-Einträge mit Emojis
             /error/ {gsub("error", "❌ error")}
             /warning/ {gsub("warning", "⚠️ warning")}
@@ -66,10 +87,10 @@ jobs:
             /hint/ {gsub("hint", "ℹ️ hint")}
             /Process Info/ {gsub("Process Info", "🔹 Process Info")}
             /Slicing Information/ {gsub("Slicing Information", "✂️ Slicing Info")}
-          
+
+            # Drucke den verbleibenden Inhalt
             {print $0}
           ' >> $GITHUB_STEP_SUMMARY
-
 
       - name: Add & Commit
         uses: EndBug/add-and-commit@v9
