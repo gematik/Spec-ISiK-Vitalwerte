@@ -40,17 +40,17 @@ jobs:
       # Java and .NET are already installed on ubuntu-latest
         
       - name: Firely.Terminal (GitHub Actions)
-        uses: FirelyTeam/firely-terminal-pipeline@v0.6.6
+        uses: FirelyTeam/firely-terminal-pipeline@v0.6.8
         with:
           PATH_TO_CONFORMANCE_RESOURCES: Resources/fsh-generated/resources/
-          DOTNET_VALIDATION_ENABLED: false
+          DOTNET_VALIDATION_ENABLED: true
           JAVA_VALIDATION_ENABLED: true
           JAVA_VALIDATION_OPTIONS: -allow-example-urls true -output-style compact -show-message-ids -language de -jurisdiction de -display-issues-are-warnings -advisor-file validator/advisor.json -resolution-context file:Resources/fsh-generated/resources/
           SIMPLIFIER_USERNAME: ${{ secrets.SIMPLIFIER_USERNAME }}
           SIMPLIFIER_PASSWORD: ${{ secrets.SIMPLIFIER_PASSWORD }}
           SUSHI_ENABLED: true
           SUSHI_OPTIONS: Resources/
-          EXPECTED_FAILS: VALIDATION_CONFORMANCE_JAVA
+          EXPECTED_FAILS: VALIDATION_CONFORMANCE_JAVA VALIDATION_CONFORMANCE_DOTNET
 
       - name: Add & Commit
         uses: EndBug/add-and-commit@v9
