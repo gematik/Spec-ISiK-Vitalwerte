@@ -45,12 +45,26 @@ jobs:
           PATH_TO_CONFORMANCE_RESOURCES: Resources/fsh-generated/resources/
           DOTNET_VALIDATION_ENABLED: true
           JAVA_VALIDATION_ENABLED: true
-          JAVA_VALIDATION_OPTIONS: -allow-example-urls true -output-style compact -show-message-ids -language de -jurisdiction de -display-issues-are-warnings -advisor-file validator/advisor.json -resolution-context file:Resources/fsh-generated/resources/
+          JAVA_VALIDATION_OPTIONS: -allow-example-urls true -output-style -html-output validation.html compact -show-message-ids -language de -jurisdiction de -display-issues-are-warnings -advisor-file validator/advisor.json -resolution-context file:Resources/fsh-generated/resources/
           SIMPLIFIER_USERNAME: ${{ secrets.SIMPLIFIER_USERNAME }}
           SIMPLIFIER_PASSWORD: ${{ secrets.SIMPLIFIER_PASSWORD }}
           SUSHI_ENABLED: true
           SUSHI_OPTIONS: Resources/
           EXPECTED_FAILS: VALIDATION_CONFORMANCE_JAVA VALIDATION_CONFORMANCE_DOTNET
+
+      - name: Convert validation report to Markdown
+        run: |
+          sudo apt-get install -y html2text
+          REPORT=$(html2text validation.html | \
+            sed -E 's/^error/❌ error/g' | \
+            sed -E 's/^warning/⚠️ warning/g' | \
+            sed -E 's/^information/ℹ️ information/g' | \
+            sed -E 's/^Process[[:space:]]+Info/🔹 Process Info/g')
+          
+          echo "## 🏥 FHIR Validation Report" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "$REPORT" >> $GITHUB_STEP_SUMMARY
+
 
       - name: Add & Commit
         uses: EndBug/add-and-commit@v9
