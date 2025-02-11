@@ -3,14 +3,14 @@ RuleSet: Meta
 * ^experimental = false
 * ^version = "4.0.1"
 * ^publisher = "gematik GmbH"
-* ^date = "2025-01-30"
+* ^date = "2025-02-11"
 
 RuleSet: Meta-CapabilityStatement
 * status = #active
 * experimental = false
 * version = "4.0.1"
 * publisher = "gematik GmbH"
-* date = "2025-01-30"
+* date = "2025-02-11"
 * implementationGuide = "https://gematik.de/fhir/isik/ImplementationGuide/ISiK-Vitalparameter|4.0.1"
 
 RuleSet: supporteProfile-SHALL(canonical, expectation)
@@ -58,12 +58,15 @@ RuleSet: ISiKVitalsignCommons
   * ^comment = "Motivation MS: Die Observation wird anhand des Codes identifiziert."
   * ^short = "Code"
   * coding MS
+  * coding only ISiKCoding
     * ^comment = "Motivation MS: Semantische Kodierung"
     * ^short = "Coding"
   * coding[loinc] MS
+  * coding[loinc] only ISiKLoincCoding
     * ^short = "LOINC Kodierung"
     * ^comment = "Motivation MS: Kodierung des Vitalparameters mittels LOINC."
   * coding[snomed] MS
+  * coding[snomed] only ISiKSnomedCTCoding
     * ^short = "SNOMED CT Kodierung"
     * ^comment = "Motivation MS: Kodierung des Vitalparameters mittels SNOMED CT."
 * subject MS

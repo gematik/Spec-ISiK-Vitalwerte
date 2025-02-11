@@ -41,3 +41,4 @@ Description: "Dieses ValueSet enthaelt Codes fuer Vitaldaten sowie Daten aus dem
 * SNOMED_CT#364424001 "Temperature of thoracic spine (observable entity)"
 * SNOMED_CT#8499008 "Pulse, function (observable entity)"
 * SNOMED_CT#442476006 "Arterial oxygen saturation (observable entity)"
+* SNOMED_CT#364090009 "Systemic arterial pressure (observable entity)"
