@@ -57,30 +57,30 @@ jobs:
         run: |
           sudo apt-get install -y pandoc
 
-          # Convert HTML to Markdown and remove only the first table
+          # Konvertiere HTML in Markdown und entferne die erste Tabelle
           pandoc -f html -t markdown_strict validation.html | awk '
             BEGIN {skip=0; table_removed=0}
-          
-            # Detect the start of the first table
-            /Filename[[:space:]]+Errors[[:space:]]+Warnings[[:space:]]+Hints/ {
+
+            # Erkenne den Start der ersten Tabelle
+            /^Filename[[:space:]]+Errors[[:space:]]+Warnings[[:space:]]+Hints/ {
                 if (table_removed == 0) {
-                    skip=1  # Start skipping lines
+                    skip=1  # Starte das Überspringen
                 }
             }
 
-            # Detect the end of the table (next separator line)
+            # Erkenne das Ende der ersten Tabelle
             skip && /^-+$/ {
                 if (table_removed == 0) {
-                    skip=0  # Stop skipping lines
-                    table_removed=1  # Ensure only the first table is removed
-                    next  # Skip this line
+                    skip=0  # Beende das Überspringen
+                    table_removed=1  # Stelle sicher, dass nur die erste Tabelle entfernt wird
+                    next  # Überspringe diese Zeile
                 }
             }
 
-            # If skipping, do not print
+            # Falls im "skip"-Modus, diese Zeile ignorieren
             skip {next}
 
-            # Replace severity labels with emojis
+            # Ersetze "Severity"-Einträge mit Emojis
             /error/ {gsub("error", "❌ error")}
             /warning/ {gsub("warning", "⚠️ warning")}
             /information/ {gsub("information", "ℹ️ information")}
@@ -88,11 +88,9 @@ jobs:
             /Process Info/ {gsub("Process Info", "🔹 Process Info")}
             /Slicing Information/ {gsub("Slicing Information", "✂️ Slicing Info")}
 
-            # Print the remaining content
+            # Drucke den verbleibenden Inhalt
             {print $0}
           ' >> $GITHUB_STEP_SUMMARY
-
-
 
       - name: Add & Commit
         uses: EndBug/add-and-commit@v9
