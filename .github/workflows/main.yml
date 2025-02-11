@@ -54,16 +54,10 @@ jobs:
 
       - name: Convert validation report to Markdown
         run: |
-          sudo apt-get install -y html2text
-          REPORT=$(html2text validation.html | \
-            sed -E 's/^error/❌ error/g' | \
-            sed -E 's/^warning/⚠️ warning/g' | \
-            sed -E 's/^information/ℹ️ information/g' | \
-            sed -E 's/^Process[[:space:]]+Info/🔹 Process Info/g')
-          
+          sudo apt-get install -y pandoc
           echo "## 🏥 FHIR Validation Report" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "$REPORT" >> $GITHUB_STEP_SUMMARY
+          pandoc -f html -t markdown_strict validation.html >> $GITHUB_STEP_SUMMARY
 
       # Upload validation.html as an artifact for later download
       - name: Upload Validation Report
