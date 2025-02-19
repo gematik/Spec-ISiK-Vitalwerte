@@ -14,15 +14,7 @@ Das Profil ISiKKoerpergroesse ist vom Profil [VitalSignDE_Koerpergroesse](http:/
 * insert Observation-category-VSCat-MS
 * code
   * coding contains IEEE11073 0..1
-  * coding[snomed] from ISiKKoerpergroesseSCTVS
   * coding[IEEE11073] = $IEEE11073#188740
-
-ValueSet: ISiKKoerpergroesseSCTVS
-Id: ISiKKoerpergroesseSCTVS
-Title: "ISiKKoerpergroesseSCTVS"
-Description: "ValueSet des Körpergroesse SnomedCT Codes in ISiK"
-* insert Meta
-* $sct#1153637007 "Body height"
 
 Instance: ISiKKoerpergroesseExample
 InstanceOf: ISiKKoerpergroesse
