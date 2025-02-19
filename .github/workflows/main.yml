@@ -38,7 +38,10 @@ jobs:
         uses: actions/checkout@v4
         if: github.event_name != 'pull_request'
 
-      # Java and .NET are already installed on ubuntu-latest
+      - name: Validate Resource Status
+        uses: patrick-werner/fhir-resource-status-check@1.0.1
+        with:
+          folder: './Resources/fsh-generated/resources/'
         
       - name: Firely.Terminal (GitHub Actions)
         uses: FirelyTeam/firely-terminal-pipeline@v0.6.8
@@ -53,59 +56,17 @@ jobs:
           SUSHI_OPTIONS: Resources/
           EXPECTED_FAILS: VALIDATION_CONFORMANCE_JAVA VALIDATION_CONFORMANCE_DOTNET
 
-      - name: Convert validation report to Markdown
-        run: |
-          sudo apt-get install -y pandoc
-
-          # Remove only the first table using <table class="grid"> and </table>
-          awk '
-            BEGIN {skip=0; table_removed=0}
-
-            # Detect the start of the first table
-            /<table class="grid">/ {
-                if (table_removed == 0) {
-                    skip=1  # Start skipping
-                    next    # Skip this line
-                }
-            }
-
-            # Detect the end of the first table
-            skip && /<\/table>/ {
-                if (table_removed == 0) {
-                    skip=0  # Stop skipping
-                    table_removed=1  # Ensure only the first table is removed
-                    next  # Skip this line
-                }
-            }
-
-            # Skip lines if inside the table
-            skip {next}
-
-            # Print everything else
-            {print}
-          ' validation.html | pandoc -f html -t markdown_strict | awk '
-            # Reduce heading size: ## -> ####
-            /^## / {gsub(/^## /, "#### ")}
-
-            # Remove all <strong> and </strong> tags (works for inline and block-level)
-            {gsub(/<strong>/, ""); gsub(/<\/strong>/, "")}  
-
-            # Replace "Severity" column values with emojis
-            /error/ {gsub("error", "❌ error")}
-            /warning/ {gsub("warning", "⚠️ warning")}
-            /information/ {gsub("information", "ℹ️ information")}
-            /hint/ {gsub("hint", "ℹ️ hint")}
-            /Process Info/ {gsub("Process Info", "🔹 Process Info")}
-            /Slicing Information/ {gsub("Slicing Information", "✂️ Slicing Info")}
-
-            # Print final output
-            {print}
-          ' >> $GITHUB_STEP_SUMMARY
+      - name: Convert Validation Report
+        uses: patrick-werner/fhir-html-validation-to-markdown@1.0.0-alpha2
+        with:
+          input_file: './path/to/validation.html'
 
       - name: Add & Commit
         uses: EndBug/add-and-commit@v9
         with:
           committer_name: GitHub Actions Bot
           committer_email: ActionBot@github.com
-          add: 'Resources/fsh-generated/resources/'
+          add: |
+            Resources/fsh-generated/resources/
+            validation.html
           message: auto-generated FHIR files by GitHub Actions (CI FSH to FHIR Validation)
