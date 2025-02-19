@@ -26,8 +26,8 @@
     ]
   },
   "valueQuantity": {
-    "code": "mL",
     "system": "http://unitsofmeasure.org",
+    "code": "mL",
     "unit": "milliliter",
     "value": 70
   },

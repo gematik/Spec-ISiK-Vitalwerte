@@ -3,7 +3,7 @@ Parent: SD_MII_ICU_Sonstige_Pulsatile_Druecke_Generisch
 Id: sd-mii-icu-pulmonalarterieller-blutdruck
 Title: "SD MII ICU Pulmonalarterieller Blutdruck"
 * insert Meta
-* category = ObservationCategoryCodes#vital-signs
+* category = $observation-category#vital-signs
 * code
   * coding ..4
   * coding contains 
@@ -42,7 +42,7 @@ Instance: Pulmonalarterieller-Blutdruck
 InstanceOf: SD_MII_ICU_Pulmonalarterieller_Blutdruck
 Usage: #example
 * status = #final
-* category = ObservationCategoryCodes#vital-signs
+* category = $observation-category#vital-signs
 * code
   * coding[sct] = $sct#250767002 "Pulmonary artery pressure"
   * coding[loinc] = $loinc#76284-9 "Pulmonary artery Blood pressure"

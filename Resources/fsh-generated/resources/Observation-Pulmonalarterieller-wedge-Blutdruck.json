@@ -36,8 +36,8 @@
     ]
   },
   "valueQuantity": {
-    "code": "mm[Hg]",
     "system": "http://unitsofmeasure.org",
+    "code": "mm[Hg]",
     "unit": "millimeter Mercury column",
     "value": 10
   },

@@ -21,11 +21,11 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
 
-  # Validate all resources using Firely Terminal 
+  # Validate all resources using Firely Terminal
   CI_FHIR_VALIDATION:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-    
+
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Checkout code (PR)
@@ -42,7 +42,7 @@ jobs:
         uses: patrick-werner/fhir-resource-status-check@1.1.0
         with:
           folder: './Resources/fsh-generated/resources/'
-        
+
       - name: Firely.Terminal (GitHub Actions)
         uses: FirelyTeam/firely-terminal-pipeline@v0.6.8
         with:
@@ -57,7 +57,7 @@ jobs:
           EXPECTED_FAILS: VALIDATION_CONFORMANCE_JAVA VALIDATION_CONFORMANCE_DOTNET
 
       - name: Convert Validation Report
-        uses: patrick-werner/fhir-html-validation-to-markdown@1.0.0-alpha2
+        uses: patrick-werner/fhir-html-validation-to-markdown@1.0.0
         with:
           input_file: 'validation.html'
 
@@ -66,7 +66,5 @@ jobs:
         with:
           committer_name: GitHub Actions Bot
           committer_email: ActionBot@github.com
-          add: |
-            Resources/fsh-generated/resources/
-            validation.html
+          add: Resources/fsh-generated/resources/
           message: auto-generated FHIR files by GitHub Actions (CI FSH to FHIR Validation)

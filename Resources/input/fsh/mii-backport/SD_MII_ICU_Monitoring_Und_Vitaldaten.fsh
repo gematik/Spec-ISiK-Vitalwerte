@@ -51,8 +51,8 @@ Title: "SD MII ICU Monitoring und Vitaldaten"
 * effective[x] 1.. MS
 * effective[x] only dateTime or Period
 * value[x] only Quantity
-* value[x] MS
-  * ^patternQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity MS
+  * system = "http://unitsofmeasure.org"
   * value 1.. MS
   * unit MS
   * system 1.. MS
