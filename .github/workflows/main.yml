@@ -59,7 +59,7 @@ jobs:
       - name: Convert Validation Report
         uses: patrick-werner/fhir-html-validation-to-markdown@1.0.0-alpha2
         with:
-          input_file: './path/to/validation.html'
+          input_file: '.validation.html'
 
       - name: Add & Commit
         uses: EndBug/add-and-commit@v9
