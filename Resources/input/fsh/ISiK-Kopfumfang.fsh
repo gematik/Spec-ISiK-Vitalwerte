@@ -15,17 +15,8 @@ http://hl7.org/fhir/StructureDefinition/headcircum) aus der FHIR R4 Spezifikatio
 * insert Observation-category-VSCat-MS
 * code
   * coding contains IEEE11073 0..1
-  * coding[snomed] from ISiKKopfumfangSCTVS
   * coding[IEEE11073] = $IEEE11073#153856
 * valueQuantity.code = #cm
-
-
-ValueSet: ISiKKopfumfangSCTVS
-Id: ISiKKopfumfangSCTVS
-Title: "ISiKKopfumfangSCTVS"
-Description: "ValueSet des Kopfumfang SnomedCT Codes in ISiK"
-* insert Meta
-* $sct#363812007 "Kopfumfang"
 
 Instance: ISiKKopfumfangExample
 InstanceOf: ISiKKopfumfang

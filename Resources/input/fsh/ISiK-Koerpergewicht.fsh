@@ -14,15 +14,7 @@ Das Profil ISiKKoerpergewicht ist vom Profil [VitalSignDE_Koerpergewicht](http:/
 * insert Observation-category-VSCat-MS
 * code
   * coding contains IEEE11073 0..1
-  * coding[snomed] from ISiKKoerpergewichtSCTVS
   * coding[IEEE11073] = $IEEE11073#188736
-
-ValueSet: ISiKKoerpergewichtSCTVS
-Id: ISiKKoerpergewichtSCTVS
-Title: "ISiKKoerpergewichtSCTVS"
-Description: "ValueSet des Körpergewichts SnomedCT Codes in ISiK"
-* insert Meta
-* $sct#27113001 "Körpergewicht"
 
 Instance: ISiKKoerpergewichtExample
 InstanceOf: ISiKKoerpergewicht

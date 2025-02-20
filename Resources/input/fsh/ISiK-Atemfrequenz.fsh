@@ -14,7 +14,6 @@ Das Profil ISiKAtemfrequenz ist vom Profil [VitalSignDE_Atemfrequenz](http://fhi
 * insert Observation-category-VSCat-MS
 * code
   * coding contains IEEE11073 0..1
-  * coding[snomed] = $sct#86290005
   * coding[IEEE11073] = $IEEE11073#151562
 
 Instance: ISiKAtemfrequenzExample
