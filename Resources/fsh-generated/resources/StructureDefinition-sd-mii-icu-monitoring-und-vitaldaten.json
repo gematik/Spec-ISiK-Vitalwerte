@@ -7,7 +7,7 @@
   "title": "SD MII ICU Monitoring und Vitaldaten",
   "status": "active",
   "experimental": false,
-  "date": "2025-02-11",
+  "date": "2025-02-20",
   "publisher": "gematik GmbH",
   "fhirVersion": "4.0.1",
   "kind": "resource",
@@ -148,7 +148,7 @@
           {
             "key": "code-coding-icu",
             "human": "Es muss mindestens ein snomed oder loinc code vorhanden sein",
-            "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/score",
+            "source": "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-monitoring-und-vitaldaten",
             "severity": "error",
             "expression": "coding.exists() implies coding.where(system = 'http://snomed.info/sct').exists() or coding.where(system = 'http://loinc.org').exists()"
           }
@@ -288,9 +288,6 @@
             "code": "Quantity"
           }
         ],
-        "patternQuantity": {
-          "system": "http://unitsofmeasure.org"
-        },
         "mustSupport": true
       },
       {
@@ -308,6 +305,7 @@
         "id": "Observation.value[x].system",
         "path": "Observation.value[x].system",
         "min": 1,
+        "patternUri": "http://unitsofmeasure.org",
         "mustSupport": true
       },
       {

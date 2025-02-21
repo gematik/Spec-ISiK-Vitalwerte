@@ -3,7 +3,7 @@ Parent: SD_MII_ICU_Sonstige_Pulsatile_Druecke_Generisch
 Id: sd-mii-icu-linksatrialer-druck
 Title: "SD MII ICU Linksatrialer Druck"
 * insert Meta
-* category = ObservationCategoryCodes#vital-signs
+* category = $observation-category#vital-signs
 * code
   * coding ..4
   * coding contains 
@@ -33,7 +33,7 @@ Instance: Linksatrialer-Druck
 InstanceOf: SD_MII_ICU_Linksatrialer_Druck
 Usage: #example
 * status = #final
-* category = ObservationCategoryCodes#vital-signs
+* category = $observation-category#vital-signs
 * code
   * coding[sct] = $sct#276760007 "Left atrial pressure"
   * coding[loinc] = $loinc#60988-3 "Left atrial pressure"

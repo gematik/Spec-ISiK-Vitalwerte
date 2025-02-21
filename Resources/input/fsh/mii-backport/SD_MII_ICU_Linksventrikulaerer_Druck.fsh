@@ -3,7 +3,7 @@ Parent: SD_MII_ICU_Sonstige_Pulsatile_Druecke_Generisch
 Id: sd-mii-icu-linksventrikulaerer-druck
 Title: "SD MII ICU Linksventrikulaerer Druck"
 * insert Meta
-* category = ObservationCategoryCodes#vital-signs
+* category = $observation-category#vital-signs
 * code
   * coding ..3
   * coding contains IEEE11073 1..1

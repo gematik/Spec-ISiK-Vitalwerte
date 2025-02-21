@@ -7,7 +7,7 @@
   "title": "SD MII ICU Linksventrikulaeres Herzzeitvolumen Durch Indikatorverduennung",
   "status": "active",
   "experimental": false,
-  "date": "2025-02-11",
+  "date": "2025-02-20",
   "publisher": "gematik GmbH",
   "fhirVersion": "4.0.1",
   "kind": "resource",
@@ -50,7 +50,6 @@
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
         "patternQuantity": {
-          "system": "http://unitsofmeasure.org",
           "unit": "liter per minute"
         }
       },

@@ -26,8 +26,8 @@
     ]
   },
   "valueQuantity": {
-    "code": "Cel",
     "system": "http://unitsofmeasure.org",
+    "code": "Cel",
     "unit": "degree Celsius",
     "value": 37
   },

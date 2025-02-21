@@ -3,7 +3,7 @@ Parent: SD_MII_ICU_Sonstige_Pulsatile_Druecke_Generisch
 Id: sd-mii-icu-rechtsventrikulaerer-druck
 Title: "SD MII ICU Rechtsventrikulaerer Druck"
 * insert Meta
-* category = ObservationCategoryCodes#vital-signs
+* category = $observation-category#vital-signs
 * code
   * coding ..3
   * coding contains IEEE-11073 1..1
@@ -33,7 +33,7 @@ Instance: Rechtsventrikulaerer-Druck
 InstanceOf: SD_MII_ICU_Rechtsventrikulaerer_Druck
 Usage: #example
 * status = #final
-* category = ObservationCategoryCodes#vital-signs
+* category = $observation-category#vital-signs
 * code.coding[sct] = $sct#276756009 "Right ventricular pressure (observable entity)"
 * code.coding[IEEE-11073] = $IEEE11073#150104 "MDC_PRESS_BLD_VENT_RIGHT"
 * subject = Reference(PatientinMusterfrau)

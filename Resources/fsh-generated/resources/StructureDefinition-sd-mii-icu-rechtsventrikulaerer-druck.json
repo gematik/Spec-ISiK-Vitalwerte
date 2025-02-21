@@ -7,7 +7,7 @@
   "title": "SD MII ICU Rechtsventrikulaerer Druck",
   "status": "active",
   "experimental": false,
-  "date": "2025-02-11",
+  "date": "2025-02-20",
   "publisher": "gematik GmbH",
   "fhirVersion": "4.0.1",
   "kind": "resource",
@@ -24,7 +24,7 @@
           "coding": [
             {
               "code": "vital-signs",
-              "system": "http://hl7.org/fhir/secondary-finding"
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
             }
           ]
         }

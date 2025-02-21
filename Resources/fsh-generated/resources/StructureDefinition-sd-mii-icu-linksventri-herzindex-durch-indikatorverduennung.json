@@ -7,7 +7,7 @@
   "title": "SD MII ICU Linksventrikulaerer Herzindex durch Indikatorverduennung",
   "status": "active",
   "experimental": false,
-  "date": "2025-02-11",
+  "date": "2025-02-20",
   "publisher": "gematik GmbH",
   "fhirVersion": "4.0.1",
   "kind": "resource",
@@ -49,7 +49,10 @@
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
-        "min": 1
+        "min": 1,
+        "patternQuantity": {
+          "system": "http://unitsofmeasure.org"
+        }
       },
       {
         "id": "Observation.value[x].unit",
