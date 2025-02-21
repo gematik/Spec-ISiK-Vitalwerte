@@ -8,6 +8,7 @@ Version: 4.0.1
 
 Datum: tbd.
 
+* Entfernen der strengeren VS-Bindings auf Observation.code[snomed] für die einfachen Vitalsignsprofile, um alle relevanten SnomedCT Concepte aus der de.basisprofil.r4 hier verwenden zu können https://github.com/gematik/spec-ISiK-Vitalparameter-und-Koerpermasze/pull/200
 * Einführung der Datentypprofile für Coding Datentypen: ISiKCoding, ISiKSnomedCTCoding & ISiKLoincCoding aus dem ISiK Basisprofil-Modul https://github.com/gematik/spec-ISiK-Vitalparameter-und-Koerpermasze/pull/159  
 * Fehlende ISO11073 Codes zu ValueSet `VS_MII_ICU_Code_Monitoring_und_Vitaldaten_ISO11073 hinzugefügt https://github.com/gematik/spec-ISiK-Vitalparameter-und-Koerpermasze/pull/179 
 * Update der Abhängigkeit zu den Basisprofilen auf Version 1.5.1 - https://github.com/gematik/spec-ISiK-Vitalparameter-und-Koerpermasze/pull/195:

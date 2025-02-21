@@ -91,10 +91,6 @@
             ]
           }
         ],
-        "patternCoding": {
-          "code": "86290005",
-          "system": "http://snomed.info/sct"
-        },
         "mustSupport": true
       },
       {

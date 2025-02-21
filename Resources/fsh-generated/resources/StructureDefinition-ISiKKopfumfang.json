@@ -91,11 +91,7 @@
             ]
           }
         ],
-        "mustSupport": true,
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://gematik.de/fhir/isik/ValueSet/ISiKKopfumfangSCTVS"
-        }
+        "mustSupport": true
       },
       {
         "id": "Observation.code.coding:IEEE11073",

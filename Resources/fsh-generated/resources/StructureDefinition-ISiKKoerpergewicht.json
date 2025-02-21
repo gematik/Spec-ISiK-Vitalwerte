@@ -104,11 +104,7 @@
             ]
           }
         ],
-        "mustSupport": true,
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://gematik.de/fhir/isik/ValueSet/ISiKKoerpergewichtSCTVS"
-        }
+        "mustSupport": true
       },
       {
         "id": "Observation.code.coding:IEEE11073",

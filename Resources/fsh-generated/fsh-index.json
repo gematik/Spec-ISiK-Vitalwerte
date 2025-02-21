@@ -44,8 +44,8 @@
     "fshName": "ISiKAtemfrequenzExample",
     "fshType": "Instance",
     "fshFile": "ISiK-Atemfrequenz.fsh",
-    "startLine": 20,
-    "endLine": 32
+    "startLine": 19,
+    "endLine": 31
   },
   {
     "outputFile": "Observation-ISiKBlutdruckSystemischArteriellExample.json",
@@ -76,40 +76,40 @@
     "fshName": "ISiKHerzfrequenzExample",
     "fshType": "Instance",
     "fshFile": "ISiK-Herzfrequenz.fsh",
-    "startLine": 27,
-    "endLine": 39
+    "startLine": 19,
+    "endLine": 31
   },
   {
     "outputFile": "Observation-ISiKKoerpergewichtExample.json",
     "fshName": "ISiKKoerpergewichtExample",
     "fshType": "Instance",
     "fshFile": "ISiK-Koerpergewicht.fsh",
-    "startLine": 27,
-    "endLine": 39
+    "startLine": 19,
+    "endLine": 31
   },
   {
     "outputFile": "Observation-ISiKKoerpergroesseExample.json",
     "fshName": "ISiKKoerpergroesseExample",
     "fshType": "Instance",
     "fshFile": "ISiK-Koerpergroesse.fsh",
-    "startLine": 27,
-    "endLine": 38
+    "startLine": 19,
+    "endLine": 30
   },
   {
     "outputFile": "Observation-ISiKKoerpertemperaturExample.json",
     "fshName": "ISiKKoerpertemperaturExample",
     "fshType": "Instance",
     "fshFile": "ISiK-Koerpertemperatur.fsh",
-    "startLine": 27,
-    "endLine": 39
+    "startLine": 19,
+    "endLine": 31
   },
   {
     "outputFile": "Observation-ISiKKopfumfangExample.json",
     "fshName": "ISiKKopfumfangExample",
     "fshType": "Instance",
     "fshFile": "ISiK-Kopfumfang.fsh",
-    "startLine": 30,
-    "endLine": 42
+    "startLine": 21,
+    "endLine": 33
   },
   {
     "outputFile": "Observation-ISiKSauerstoffsaettigungArteriellExample.json",
@@ -501,7 +501,7 @@
     "fshType": "Profile",
     "fshFile": "ISiK-Atemfrequenz.fsh",
     "startLine": 1,
-    "endLine": 18
+    "endLine": 17
   },
   {
     "outputFile": "StructureDefinition-ISiKBlutdruckSystemischArteriell.json",
@@ -541,7 +541,7 @@
     "fshType": "Profile",
     "fshFile": "ISiK-Herzfrequenz.fsh",
     "startLine": 1,
-    "endLine": 18
+    "endLine": 17
   },
   {
     "outputFile": "StructureDefinition-ISiKICD10GMCoding.json",
@@ -557,7 +557,7 @@
     "fshType": "Profile",
     "fshFile": "ISiK-Koerpergewicht.fsh",
     "startLine": 1,
-    "endLine": 18
+    "endLine": 17
   },
   {
     "outputFile": "StructureDefinition-ISiKKoerpergroesse.json",
@@ -565,7 +565,7 @@
     "fshType": "Profile",
     "fshFile": "ISiK-Koerpergroesse.fsh",
     "startLine": 1,
-    "endLine": 18
+    "endLine": 17
   },
   {
     "outputFile": "StructureDefinition-ISiKKoerpertemperatur.json",
@@ -573,7 +573,7 @@
     "fshType": "Profile",
     "fshFile": "ISiK-Koerpertemperatur.fsh",
     "startLine": 1,
-    "endLine": 18
+    "endLine": 17
   },
   {
     "outputFile": "StructureDefinition-ISiKKopfumfang.json",
@@ -581,7 +581,7 @@
     "fshType": "Profile",
     "fshFile": "ISiK-Kopfumfang.fsh",
     "startLine": 1,
-    "endLine": 20
+    "endLine": 19
   },
   {
     "outputFile": "StructureDefinition-ISiKLoincCoding.json",
@@ -998,46 +998,6 @@
     "fshFile": "mii-backport/SD_MII_ICU_Zentralvenoeser_Blutdruck.fsh",
     "startLine": 1,
     "endLine": 15
-  },
-  {
-    "outputFile": "ValueSet-ISiKHerzfrequenzSCTVS.json",
-    "fshName": "ISiKHerzfrequenzSCTVS",
-    "fshType": "ValueSet",
-    "fshFile": "ISiK-Herzfrequenz.fsh",
-    "startLine": 20,
-    "endLine": 25
-  },
-  {
-    "outputFile": "ValueSet-ISiKKoerpergewichtSCTVS.json",
-    "fshName": "ISiKKoerpergewichtSCTVS",
-    "fshType": "ValueSet",
-    "fshFile": "ISiK-Koerpergewicht.fsh",
-    "startLine": 20,
-    "endLine": 25
-  },
-  {
-    "outputFile": "ValueSet-ISiKKoerpergroesseSCTVS.json",
-    "fshName": "ISiKKoerpergroesseSCTVS",
-    "fshType": "ValueSet",
-    "fshFile": "ISiK-Koerpergroesse.fsh",
-    "startLine": 20,
-    "endLine": 25
-  },
-  {
-    "outputFile": "ValueSet-ISiKKoerpertemperaturSCTVS.json",
-    "fshName": "ISiKKoerpertemperaturSCTVS",
-    "fshType": "ValueSet",
-    "fshFile": "ISiK-Koerpertemperatur.fsh",
-    "startLine": 20,
-    "endLine": 25
-  },
-  {
-    "outputFile": "ValueSet-ISiKKopfumfangSCTVS.json",
-    "fshName": "ISiKKopfumfangSCTVS",
-    "fshType": "ValueSet",
-    "fshFile": "ISiK-Kopfumfang.fsh",
-    "startLine": 23,
-    "endLine": 28
   },
   {
     "outputFile": "ValueSet-vs-mii-icu-bodysite-observation-blutdruck.json",

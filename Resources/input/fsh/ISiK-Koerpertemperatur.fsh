@@ -14,15 +14,7 @@ Das Profil ISiKKoerpertemperatur ist vom Profil [VitalSignDE_Koerpertemperatur](
 * insert Observation-category-VSCat-MS
 * code
   * coding contains IEEE11073 0..1
-  * coding[snomed] from ISiKKoerpertemperaturSCTVS
   * coding[IEEE11073] = $IEEE11073#150364
-
-ValueSet: ISiKKoerpertemperaturSCTVS
-Id: ISiKKoerpertemperaturSCTVS
-Title: "ISiKKoerpertemperaturSCTVS"
-Description: "ValueSet des Körpergewicht SnomedCT Codes in ISiK"
-* insert Meta
-* $sct#386725007 "Body temperature (observable entity)"
 
 Instance: ISiKKoerpertemperaturExample
 InstanceOf: ISiKKoerpertemperatur
