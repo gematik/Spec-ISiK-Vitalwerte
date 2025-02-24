@@ -6,7 +6,7 @@ Die erste Ziffer X bezeichnet ein Major-Release und regelt die Gültigkeit von R
 
 Version: 4.0.1
 
-Datum: tbd.
+Datum: 24.2.2025
 
 * Entfernen der strengeren VS-Bindings auf Observation.code[snomed] für die einfachen Vitalsignsprofile, um alle relevanten SnomedCT Concepte aus der de.basisprofil.r4 hier verwenden zu können https://github.com/gematik/spec-ISiK-Vitalparameter-und-Koerpermasze/pull/200
 * Einführung der Datentypprofile für Coding Datentypen: ISiKCoding, ISiKSnomedCTCoding & ISiKLoincCoding aus dem ISiK Basisprofil-Modul https://github.com/gematik/spec-ISiK-Vitalparameter-und-Koerpermasze/pull/159  
