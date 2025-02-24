@@ -17,7 +17,7 @@ Die Verwendung der [CapabilityStatement-Expectation](https://hl7.org/fhir/R4/ext
 
 Alle bestätigungsrelevanten Systeme MÜSSEN im Sinne der [Herstellung des Patienten- und Encounter-Kontextes](https://simplifier.net/guide/isik-basis-403/Einfuehrung/UebergreifendeFestlegungen/Patient-Besuch-Kontext?version=4.0.3) Interaktionen auf die entsprechenden Profile unterstützen:
 
-{{render:https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementMinimalAdministrativeDataSource}}
+{{render:https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementMinimalAdministrativeDataSourceVital}}
 
 Dieses Modul unterscheidet CapabilityStatements für PDMS (Intensivversorgung) und alle weiteren bestätigungsrelevanten Systeme. 
 
