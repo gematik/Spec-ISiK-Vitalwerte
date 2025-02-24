@@ -112,10 +112,21 @@ Usage: #definition
     * type = #reference
   * searchParam[+]
     * extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-    * extension.valueCode = #SHALL
+    * extension.valueCode = #MAY
     * name = "subject"
     * definition = "http://hl7.org/fhir/SearchParameter/Encounter-subject"
     * type = #reference
+  * searchParam[+]
+    * insert Expectation(#SHALL)
+    * name = "patient"
+    * definition = "http://hl7.org/fhir/SearchParameter/clinical-patient"
+    * type = #reference
+    * documentation = 
+      "**Beispiel:**    
+      `GET [base]/Encounter?patient=Patient/123`    
+      **Anwendungshinweis:**   
+      Weitere Details siehe [FHIR-Kernspezifikation](https://hl7.org/fhir/R4/search.html#reference).  
+      Dieser Suchparameter ist für die Umsetzung des IHE QEDm Profils verpflichtend."
   * searchParam[+]
     * extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
     * extension.valueCode = #SHALL
