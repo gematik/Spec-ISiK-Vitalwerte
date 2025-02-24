@@ -1,51 +1,31 @@
 Profile: ISiKKoerpertemperatur
 Parent: VitalSignDE_Koerpertemperatur
 Id: ISiKKoerpertemperatur
-* insert Meta
-* status MS
-* category MS
-* category[VSCat] MS
-* code MS
-  * coding contains IEEE11073 0..1
-  * coding[loinc] MS
-  * coding[snomed] MS
-  * coding[snomed] from ISiKKoerpertemperaturSCTVS
-  * coding[IEEE11073] = $IEEE11073#150364
-* subject MS
-* encounter MS
-* effective[x] MS
-* value[x] MS
-* valueQuantity MS
-* valueQuantity.value MS
-* valueQuantity.unit MS
-* valueQuantity.system MS
-* valueQuantity.code MS
-* performer MS
-  * ^comment = "Motivation: Dieses Feld stellt eine präzisierende Angaben zum Zweck der Qualitätsbewertung bereit"
-* method MS
-  * ^comment = "Motivation: Dieses Feld stellt eine präzisierende Angaben zum Zweck der Qualitätsbewertung bereit"
-* device MS
-  * ^comment = "Motivation: Dieses Feld stellt eine präzisierende Angaben zum Zweck der Qualitätsbewertung bereit"
-* dataAbsentReason MS
+Description: "Dieses Profil spezifiziert die Minimalanforderungen für die Bereitstellung von Informationen über die Körpertemperatur eines Patienten im Rahmen der interoperablen Kommunikation gemäß den Vorgaben der ISiK (Interoperable Schnittstelle im Krankenhaus).
+### Motivation
+Die Erfassung und Überwachung der Körpertemperatur ist essenziell für die frühzeitige Erkennung von Infektionen, die Beurteilung des Gesundheitszustands sowie die Unterstützung klinischer Entscheidungen in der Patientenversorgung.
 
-ValueSet: ISiKKoerpertemperaturSCTVS
-Id: ISiKKoerpertemperaturSCTVS
-Title: "ISiKKoerpertemperaturSCTVS"
-Description: "ValueSet des Körpergewicht SnomedCT Codes in ISiK"
-* insert Meta
-* $sct#386725007 "Body temperature (observable entity)"
+In FHIR wird die Körpertemperatur mit der Observation-Ressource repräsentiert.
+
+### Kompatibilität
+Das Profil ISiKKoerpertemperatur ist vom Profil [VitalSignDE_Koerpertemperatur](http://fhir.de/StructureDefinition/observation-de-vitalsign-koerpertemperatur) aus den deutschen Basisprofilen abgeleitet. Es ist kompatibel mit dem Profil [OObservation Body Temperature Profile](http://hl7.org/fhir/StructureDefinition/bodytemp) aus der FHIR R4 Spezifikation."
+* insert ISiKVitalsignCommons
+* insert Quantity-MS
+* insert Observation-category-VSCat-MS
+* code
+  * coding contains IEEE11073 0..1
+  * coding[IEEE11073] = $IEEE11073#150364
 
 Instance: ISiKKoerpertemperaturExample
 InstanceOf: ISiKKoerpertemperatur
 Usage: #example
-* meta.profile[0] = "http://hl7.org/fhir/StructureDefinition/bodytemp"
-* meta.profile[+] = "http://fhir.de/StructureDefinition/observation-de-vitalsign-koerpertemperatur"
 * status = #final
 * category[VSCat] = $observation-category#vital-signs
-* code.coding[loinc] = $loinc#8310-5 "Body temperature"
+* code = $loinc#8310-5 "Body temperature"
 * code.coding[snomed] = $sct#386725007 "Body temperature (observable entity)"
 * code.coding[IEEE11073] = $IEEE11073#150364 "MDC_TEMP_BODY"
 * code.text = "Körpertemperatur"
 * subject = Reference(PatientinMusterfrau)
 * effectiveDateTime = "2020-10-11"
+* performer.reference = "Practitioner/DrMustermann"
 * valueQuantity = 36.8 'Cel' "°C"

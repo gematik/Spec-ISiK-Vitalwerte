@@ -5,11 +5,11 @@
   "id": "vs-mii-icu-code-monitoring-und-vitaldaten-snomed",
   "title": "VS MII ICU Code Monitoring und Vitaldaten [sct]",
   "description": "Dieses ValueSet enthaelt Codes fuer Vitaldaten sowie Daten aus dem Patientenmonitoring.",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "url": "https://gematik.de/fhir/isik/ValueSet/vs-mii-icu-code-monitoring-und-vitaldaten-snomed",
   "experimental": false,
   "publisher": "gematik GmbH",
-  "date": "2024-09-30",
+  "date": "2025-02-24",
   "compose": {
     "include": [
       {
@@ -166,6 +166,10 @@
           {
             "code": "442476006",
             "display": "Arterial oxygen saturation (observable entity)"
+          },
+          {
+            "code": "364090009",
+            "display": "Systemic arterial pressure (observable entity)"
           }
         ]
       }

@@ -5,11 +5,11 @@
   "id": "vs-mii-icu-unit-equivalent-ucum-beats-per-minute",
   "title": "VS MII ICU Unit equivalent UCUM beats per minute",
   "description": "Dieses ValueSet enthält äquivalente Codes für Herzschläge pro Minute.",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "url": "https://gematik.de/fhir/isik/ValueSet/vs-mii-icu-unit-equivalent-ucum-beats-per-minute",
   "experimental": false,
   "publisher": "gematik GmbH",
-  "date": "2024-09-30",
+  "date": "2025-02-24",
   "compose": {
     "include": [
       {

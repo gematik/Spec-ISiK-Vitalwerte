@@ -38,13 +38,18 @@
     "reference": "Device/ExampleDevice"
   },
   "effectiveDateTime": "2019-07-02",
+  "performer": [
+    {
+      "reference": "Practitioner/DrMustermann"
+    }
+  ],
   "component": [
     {
       "code": {
         "coding": [
           {
-            "code": "LP7386-8",
-            "system": "http://loinc.org",
+            "code": "272729005",
+            "system": "http://snomed.info/sct",
             "display": "Lead I"
           }
         ]
@@ -62,8 +67,8 @@
       "code": {
         "coding": [
           {
-            "code": "LP7386-6",
-            "system": "http://loinc.org",
+            "code": "272730000",
+            "system": "http://snomed.info/sct",
             "display": "Lead II"
           }
         ]
@@ -81,8 +86,8 @@
       "code": {
         "coding": [
           {
-            "code": "LP7386-4",
-            "system": "http://loinc.org",
+            "code": "272731001",
+            "system": "http://snomed.info/sct",
             "display": "Lead III"
           }
         ]

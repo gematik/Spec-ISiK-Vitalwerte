@@ -3,9 +3,7 @@
   "id": "ISiKHerzfrequenzExample",
   "meta": {
     "profile": [
-      "https://gematik.de/fhir/isik/StructureDefinition/ISiKHerzfrequenz",
-      "http://hl7.org/fhir/StructureDefinition/heartrate",
-      "http://fhir.de/StructureDefinition/observation-de-vitalsign-herzfrequenz"
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKHerzfrequenz"
     ]
   },
   "category": [
@@ -26,14 +24,14 @@
         "display": "Heart rate"
       },
       {
+        "system": "http://snomed.info/sct",
+        "code": "364075005",
+        "display": "Heart rate (observable entity)"
+      },
+      {
         "code": "147842",
         "system": "urn:iso:std:iso:11073:10101",
         "display": "MDC_ECG_HEART_RATE"
-      },
-      {
-        "code": "364075005",
-        "system": "http://snomed.info/sct",
-        "display": "Heart rate (observable entity)"
       }
     ],
     "text": "Herzfrequenz"
@@ -48,5 +46,10 @@
   "subject": {
     "reference": "Patient/PatientinMusterfrau"
   },
-  "effectiveDateTime": "2020-10-11"
+  "effectiveDateTime": "2020-10-11",
+  "performer": [
+    {
+      "reference": "Practitioner/DrMustermann"
+    }
+  ]
 }

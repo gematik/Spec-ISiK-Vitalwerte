@@ -3,9 +3,7 @@
   "id": "ISiKKoerpergroesseExample",
   "meta": {
     "profile": [
-      "https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpergroesse",
-      "http://hl7.org/fhir/StructureDefinition/bodyheight",
-      "http://fhir.de/StructureDefinition/observation-de-vitalsign-koerpergroesse"
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpergroesse"
     ]
   },
   "category": [
@@ -21,9 +19,9 @@
   "code": {
     "coding": [
       {
-        "code": "188740",
-        "system": "urn:iso:std:iso:11073:10101",
-        "display": "MDC_LEN_BODY_ACTUAL"
+        "system": "http://loinc.org",
+        "code": "8302-2",
+        "display": "Body height"
       },
       {
         "system": "http://snomed.info/sct",
@@ -43,5 +41,10 @@
   "subject": {
     "reference": "Patient/PatientinMusterfrau"
   },
-  "effectiveDateTime": "2020-10-11"
+  "effectiveDateTime": "2020-10-11",
+  "performer": [
+    {
+      "reference": "Practitioner/DrMustermann"
+    }
+  ]
 }

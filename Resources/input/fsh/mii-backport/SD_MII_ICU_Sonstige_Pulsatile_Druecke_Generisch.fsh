@@ -6,6 +6,7 @@ Title: "SD MII ICU Sonstige pulsatile Druecke Generisch"
 * identifier MS
 * basedOn ..1
 * status MS
+  * ^comment = "Motivation MS: Observation.status ist bereits durch die Kardinalität der Basisklasse Observation erzwungen. Dieses Feld dient der Präzisierung des Status der Untersuchung"
 * category MS
 * code MS
   * coding MS
@@ -134,5 +135,5 @@ Title: "SD MII ICU Sonstige pulsatile Druecke Generisch"
     * system 1.. MS
     * code 1.. MS
 * performer MS
-  * ^comment = "Motivation: Dieses Feld stellt eine präzisierende Angaben zum Zweck der Qualitätsbewertung bereit"
+  * ^comment = "Motivation MS: Dieses Feld stellt eine präzisierende Angaben zum Zweck der Qualitätsbewertung bereit"
 

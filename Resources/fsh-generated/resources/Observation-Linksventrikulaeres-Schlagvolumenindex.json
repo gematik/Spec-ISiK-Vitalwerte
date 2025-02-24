@@ -31,8 +31,8 @@
     ]
   },
   "valueQuantity": {
-    "code": "mL/m2",
     "system": "http://unitsofmeasure.org",
+    "code": "mL/m2",
     "unit": "milliliter per square meter",
     "value": 40
   },

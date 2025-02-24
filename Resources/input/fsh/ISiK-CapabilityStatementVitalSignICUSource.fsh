@@ -1,8 +1,8 @@
-Instance: ISiKCapabilityStatementVitalparameterServerPDMS
+Instance: ISiKCapabilityStatementVitalSignICUSource
 InstanceOf: CapabilityStatement
 Usage: #definition
 * insert Meta-CapabilityStatement
-* name = "ISiKCapabilityStatementVitalparameterServerPDMS"
+* name = "ISiKCapabilityStatementVitalSignICUSource"
 * title = "ISiK CapabilityStatement Vitalparameter Server PDMS"
 * contact.telecom.system = #url
 * contact.telecom.value = "https://www.gematik.de"
@@ -12,7 +12,7 @@ Usage: #definition
 * fhirVersion = #4.0.1
 * format[0] = #application/fhir+xml
 * format[+] = #application/fhir+json
-* instantiates = Canonical(ISiKCapabilityStatementVitalparameterServerPDMS)
+* instantiates = Canonical(ISiKCapabilityStatementVitalSignICUSource)
 * rest.mode = #server
 * rest.resource[+]
 * rest.resource[=].extension.url = $capabilitystatement-expectation
@@ -138,7 +138,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/clinical-patient"
 * rest.resource[=].searchParam[=].type = #reference
 * rest.resource[=].searchParam[+].extension.url = $capabilitystatement-expectation
-* rest.resource[=].searchParam[=].extension.valueCode = #SHALL
+* rest.resource[=].searchParam[=].extension.valueCode = #MAY
 * rest.resource[=].searchParam[=].name = "subject"
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Observation-subject"
 * rest.resource[=].searchParam[=].type = #reference

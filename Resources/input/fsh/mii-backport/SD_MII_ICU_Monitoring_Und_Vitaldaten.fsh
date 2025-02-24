@@ -9,6 +9,7 @@ Title: "SD MII ICU Monitoring und Vitaldaten"
   * ^short = "maximal Kardinalität bei Übernahme aus MII-Kerndatensatz-ICU entfernt"
 * partOf only Reference(Procedure)
 * status MS
+  * ^comment = "Motivation MS: Observation.status ist bereits durch die Kardinalität der Basisklasse Observation erzwungen. Dieses Feld dient der Präzisierung des Status der Untersuchung"
 * category MS
   * ^slicing.discriminator.type = #pattern
   * ^slicing.discriminator.path = "$this"
@@ -50,8 +51,8 @@ Title: "SD MII ICU Monitoring und Vitaldaten"
 * effective[x] 1.. MS
 * effective[x] only dateTime or Period
 * value[x] only Quantity
-* value[x] MS
-  * ^patternQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity MS
+  * system = "http://unitsofmeasure.org"
   * value 1.. MS
   * unit MS
   * system 1.. MS
@@ -71,6 +72,6 @@ Title: "SD MII ICU Monitoring und Vitaldaten"
   * interpretation MS
   * referenceRange MS
 * performer MS
-  * ^comment = "Motivation: Dieses Feld stellt eine präzisierende Angaben zum Zweck der Qualitätsbewertung bereit"
+  * ^comment = "Motivation MS: Dieses Feld stellt eine präzisierende Angaben zum Zweck der Qualitätsbewertung bereit"
 * method MS
-  * ^comment = "Motivation: Dieses Feld stellt eine präzisierende Angaben zum Zweck der Qualitätsbewertung bereit"
+  * ^comment = "Motivation MS: Dieses Feld stellt eine präzisierende Angaben zum Zweck der Qualitätsbewertung bereit"
