@@ -1,0 +1,405 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Implementierungsleitfaden ISiK-Modul Vitalparameter und Körpermaße</title>
+
+    <link rel="icon" href="static/styles/common/favicon.ico" />
+
+    <script src="static/styles/common/jquery/jquery.min.js"></script>
+    <script src="static/styles/common/bootstrap/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="static/styles/common/main.min.css" />
+    <link rel="stylesheet" href="static/styles/common/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="static/styles/common/rendering/rendering.min.css" /> 
+
+    <script src="static/styles/common/rendering/stu3TreeTable.min.js"></script>
+    <script src="static/styles/common/rendering/baseTreetable.min.js"></script>
+
+    <link rel="stylesheet" href="static/styles/twolevelmenu/style.css?v=1db86d1e07aed80" />
+
+</head>
+
+<body>
+
+    <div id="ig-viewer">
+
+        <div class="ig-view-content">
+
+            <div id="ig-view-twolevelmenu">
+
+                <div class="header" role="banner" aria-label="Header">
+                    
+
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+                <a class="navbar-brand" href="ImplementationGuide-markdown-Einfuehrung.html">
+                    Implementierungsleitfaden ISiK-Modul Vitalparameter und K&#xF6;rperma&#xDF;e
+                </a>
+
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+
+
+                    <li>
+                        <a href="ImplementationGuide-markdown-Einfuehrung.html">
+                            Einf&#xFC;hrung
+                        </a>
+                    </li>
+
+                        <li>
+                            <a href="ImplementationGuide-markdown-ReleaseNotes.html">
+                                Release Notes
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ImplementationGuide-markdown-Motivation.html">
+                                Motivation
+                            </a>
+                        </li>
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                &#xDC;bergreifende Festlegungen <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeFestlegungen.html">
+                                            &#xDC;bergreifende Festlegungen
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Methodik.html">
+                                            Methodik
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-BestaetigungsrelevanteSysteme.html">
+                                            Best&#xE4;tigungsrelevante Systeme
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Kompatibilitaet.html">
+                                            Kompatibilit&#xE4;t
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-MustSupportFlags.html">
+                                            Must-Support-Flags
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Repraesentationsformate.html">
+                                            Repr&#xE4;sentationsformate
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Suchparameter.html">
+                                            Suchparameter
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-RestApi.html">
+                                            REST-API
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-AnmerkungenMS.html">
+                                            Anmerkungen zu Must-Support-Feldern
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Interaktionen.html">
+                                            Interaktionen
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Signaldaten.html">
+                                            Signaldaten
+                                        </a>
+                                    </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                &#xDC;bergreifende Use Cases <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeUseCases.html">
+                                            &#xDC;bergreifende Use Cases
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeUseCases-Intensivversorgung.html">
+                                            Intensivversorgung
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-UebergreifendeUseCases-AMTS.html">
+                                            Arzneimitteltherapiesicherheit (AMTS)
+                                        </a>
+                                    </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Datenobjekte <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte.html">
+                                            Datenobjekte
+                                        </a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-CapabilityStatement.html">
+                                            CapabilityStatement
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Koerpergewicht.html">
+                                            Koerpergewicht
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Koerpergroesse.html">
+                                            Koerpergroesse
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Koerpertemperatur.html">
+                                            Koerpertemperatur
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Kopfumfang.html">
+                                            Kopfumfang
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Atemfrequenz.html">
+                                            Atemfrequenz
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Blutdruck.html">
+                                            Blutdruck
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Herzfrequenz.html">
+                                            Herzfrequenz
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Sauerstoffsaettigung.html">
+                                            Sauerstoffsaettigung
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Ekg.html">
+                                            EKG
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-GCS.html">
+                                            GCS
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-MII_Intensiv_Normal.html">
+                                            MII Profile der Intensiv- und Normalversorgung
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ImplementationGuide-markdown-Datenobjekte-Laborprofile.html">
+                                            Laborprofile f&#xFC;r &#xDC;berleitung Intensivversorgung
+                                        </a>
+                                    </li>
+
+                            </ul>
+                        </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+                </div>
+
+                <div class="content container" role="main" aria-label="Main content">
+                    
+
+
+<div class="row">
+
+        <div class="col-md-6">
+            <ul class="nav nav-pills nav-stacked affix-top">
+                    <li>
+                        <a title="Motivation" href="#UebergreifendeUseCases-Intensivversorgung-Intensivversorgung_Motivation">Motivation</a>
+                    </li>
+                    <li>
+                        <a title="Normativer Status" href="#Intensivversorgung-Intensivversorgung_Normativer_Status">Normativer Status</a>
+                    </li>
+                    <li>
+                        <a title="Use Cases" href="#UebergreifendeUseCases-Intensivversorgung-Intensivversorgung_UseCases">Use Cases</a>
+                    </li>
+                    <li>
+                        <a title="Profile" href="#UebergreifendeUseCases-Intensivversorgung-Intensivversorgung_Profile">Profile</a>
+                    </li>
+            </ul>
+        </div>
+
+    <div class="col-md-18">
+
+        <div id="preview-content">
+
+            <h1 id="uberleitung-intensivversorgung-im-krankenhaus">Überleitung Intensivversorgung im Krankenhaus</h1>
+
+
+                    <div id="UebergreifendeUseCases-Intensivversorgung-Intensivversorgung_Motivation">
+                        <h2 id="motivation-und-hintergrund">Motivation und Hintergrund</h2>
+<p>Dieser Abschnitt des Implementierungsleitfadens beschreibt eine bidirektionale Überleitung zwischen Intensiv- und Normalversorgung auf der Ebene eines Workflows zur Datenkommunikation zwischen den betroffenen Systemen (PDMS und KIS).</p>
+<h3 id="stakeholder-user-und-weitere-systeme">Stakeholder, User und weitere Systeme</h3>
+<p>Die Spezifikation richtet sich insbesondere an SW-Hersteller von KIS und PDMS.</p>
+<p>Es handelt sich um eine technische Spezifikation, zu der keine weiteren medizinischen Fachexperten zu Rate gezogen werden.</p>
+<p>Kommunikations-Workflows, die auf der hiesigen Schnittstellen-Festlegung aufbauen, können lediglich der Unterstützung von Versorgung und Qualitätssicherungsmaßnahmen in der Überleitung zwischen Intensiv- und Normalversorgung (bidirektional) dienen.</p>
+<h3 id="user-und-systeme-im-fokus">User und Systeme im Fokus</h3>
+<p>Primär zu berücksichtigende User sind</p>
+<ul>
+<li>Krankenhausmitarbeitende (insbesondere intensivmedizinisches Personal, MFAs, Ärzte etc.)</li>
+</ul>
+<p>Beteiligte Systeme sind prinzipiell alle <a href="https://simplifier.net/guide/isik-basis-v4/UebergreifendeFestlegungen_BestaetigungsrelevanteSysteme?version=current">bestätigungsrelevanten Systeme</a>. Primär hervorzuheben sind entsprechend der Definition der DKG dabei:</p>
+<ul>
+<li>KIS mit Funktion elektronische Kurve bzw. entsprechendes KIS-Modul</li>
+<li>Patientendaten-Managementsystem (PDMS) [z.B. für Intensivbereiche]</li>
+<li>Elektronische Kurve [z.B. für die Verwendung auf Normal-Stationen]</li>
+</ul>
+<h3 id="einordnung-in-die-isik-landschaft">Einordnung in die ISiK Landschaft</h3>
+<p>Als übergreifender Use Case (bzw. Workflow) ist die Überleitung zwischen Intensiv- und Normalversorgung nicht allein im Modul Vitalparameter verankert. Dennoch werden aus verschiedenen fachlichen Gründen  die  wesentlichen Ressourcen hier vorgehalten.
+Fachlich relevant sind im ISiK-Kontext für die Intensivversorgung ebenfalls:</p>
+<ul>
+<li><strong>ISiK Basismodul: Mit Informationen zum Patienten und Diagnosen</strong> - Hier sind Patientenstammdaten, Diagnosen und Prozeduren verortet. Es gehören aber auch chronische Erkrankungen (z.B. Niereninsuffizienz), Lebensumstände (z.B. Schwangerschaft) und Lebensgewohnheiten (z.B. Raucher) dazu. Siehe <a href="https://simplifier.net/guide/isik-basis-v4">ISiK Basismodul</a></li>
+<li><strong>ISiK Support Modul Labor: Mit Informationen aus der Labor Diagnostik</strong> - In diesem Modul finden sich relevante Beobachtungen und Messwerte, die als Ergebnis eines diagnostischen Prozesses oder einer Probe zugeordnet werden können. Siehe <a href="https://simplifier.net/guide/isik-labor-v4">ISiK Modul Labor</a></li>
+</ul>
+<h3 id="out-of-scope">Out-of-Scope</h3>
+<p>Aufgrund technischer Beschränkungen und Aufwände gibt es Aspekte, die aktuell außen vor bleiben müssen:</p>
+<ul>
+<li>Die Festlegung und Abstimmung eines vollständigen ISiK Labor Moduls</li>
+<li>Die konkrete Abdeckung von Versorgungsprozessen in der Intensivmedizin</li>
+</ul>
+
+                    </div>
+                    <div id="Intensivversorgung-Intensivversorgung_Normativer_Status">
+                        <h2 id="normativer-status">Normativer Status</h2>
+<p>Bestätigungsrelevante Systeme für dieses Modul SOLLEN unter geeigneter Konfiguration die geschilderten Use Cases unterstützen können.</p>
+<p>Für alle Observation-Profile, die im Rahmen dieser Festlegung implementiert werden, MÜSSEN die Suchparameter entsprechend der <a href="https://simplifier.net/guide/isik-basis-v4/ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Observation?version=current">Observation-Seite aus der Basis</a> implementiert werden.</p>
+
+                    </div>
+                    <div id="UebergreifendeUseCases-Intensivversorgung-Intensivversorgung_UseCases">
+                        <h2 id="use-cases-und-workflows-ubergang-zwischen-akut-und-normalversorgung">Use Cases und Workflows - Übergang zwischen Akut- und Normalversorgung</h2>
+<p>Zahlreiche Use Cases rund um den Überleitungsprozess zwischen einer Intensiv- und einer Normalstation  (bidirektional) innerhalb eines Krankenhauses sind vorstellbar. Neben illustrierenden Use Stories wird an dieser Stelle auch eine Workflow-Perspektive eingenommen.</p>
+<p>Zum jetzigen Stand kann die Spezifikation keine umfassende Abdeckung eines Überleitungsprozesses vorweisen. Vielmehr wird die Überleitung zwischen Intensiv- und Normalversorgung (bidirektional) auf der Ebene eines Workflows abgebildet, fokussierend auf die Kommunikation relevanter Daten aus Normalversorgung (KIS) und Intensivversorgung (PDMS).</p>
+<h3 id="werte-aus-kis-und-pdms">Werte aus KIS und PDMS</h3>
+<p>Datenquellen für die hier betrachteten Fälle sind KIS und PDMS.
+Einige Use Stories, die diesen Kontext illustrieren sind folgende:</p>
+<p><strong>UC-VIT-ICU-NORM-001</strong>: Eine Ärztin fragt während einer Kontroll-Maßnahme in der normalstationären Kontrolle nachträglich Daten zur Herzfrequenz eines Patienten über ein KIS mit der Funktion einer elektronische Kurve ab (momentan liegt die Herzfrequenz bei 90 Schlägen pro Minute). Zweck dabei ist sicherzustellen, dass die Herzfrequenz im Vergleich zu den Werten aus der Intensivstation für den Patienten im Normalbereich liegt. Die Daten stammen aus einem intensiv-stationären Aufenthalt, den der Patient aufgrund einer supraventrikulären Tachykardie durchlaufen hat.</p>
+<p>Hintergrund: fachlich wäre hier auch eine Blutdruckabfrage relevant - auch diese soll auf entsprechende Weise abgefragt werden können.</p>
+<p><strong>UC-VIT-ICU-NORM-002</strong>: Eine Ärztin fragt während der intensivmedizinischen Versorgung nachträglich Daten aus dem normalstationären Aufenthalt zum Blutdruck ab über ein PDMS-Frontend, um den Beginn der Urosepsis eingrenzen zu können. Auf Normalstation war der Patient Aufgrund eines Harnwegs-Infektes.</p>
+<p><strong>UC-VIT-ICU-NORM-003</strong>: Eine Medizinische Fachangestellte (MFA) sendet vor der Überleitung in die Intensivstation Daten aus dem normalstationären Aufenthalt an ein PDMS-Frontend. Ausgelöst wir der Versand per Button im KIS-Frontend. Relevant sind dabei Daten zum Blutdruck, damit der Beginn der Urosepsis später in der Intensivversrogung  zeitlich feststellbar ist. Auf Normalstation war der Patient Aufgrund eines Harnwegs-Infektes.</p>
+<h3 id="laborwerte">Laborwerte</h3>
+<p>Einige Werte, die für den geschilderten Kontext relevant sind, stammen aus einem Labor Information System (LIS). Hierzu illustrierend:</p>
+<p><strong>UC-VIT-ICU-NORM-LAB-001</strong>: Eine Ärztin fragt während einer Kontroll-Maßnahme in der normalstationären Kontrolle nachträglich Daten zum Serumkreatinin eines Patienten über ein KIS mit der Funktion einer elektronische Kurve ab, um die Stabilität der Nierenfunktion anhand der glomerulären Filtrationsrate sicherzustellen. Die Daten stammen aus einem intensivstationären Aufenthalt, den der Patient aufgrund eines akuten Nierenversagens durchlaufen hat.</p>
+<p>Vorannahmen zur User Story: Das PDMS verfügt über eine Historie der Serumkreatininwerte, da es die Labordaten (aus einem LIS stammend) persistiert. Das PDMS verfügt auch über eine Schnittstelle für READ-Interaktionen entsprechend der ISIK Festlegung.</p>
+<p>Hintergrund zur Konfiguration: Das KIS agiert hier als Client und das PDMS als Server.
+Da in der Praxis ein LIS, das mit PDMS integriert ist, i.d.R. auch mit einem KIS integriert ist, kann die Abfrage von Labordaten mit intensivmedizinischem Bezug aus dem KIS auch direkt erfolgen.</p>
+<h2 id="workflow">Workflow</h2>
+<p>Zur Abbildung des bidirektionalen Überleitungsprozesses zwischen einer Intensiv- und einer Normalstation können KIS und PDMS jeweils die Rolle des KIS und Client einnehmen.</p>
+<p>Siehe dazu <a href="ImplementationGuide-markdown-RestApi.html" title='ImplementationGuide/markdown/RestApi.md'>REST-API</a></p>
+<h3 id="diagramme">Diagramme</h3>
+<p>Vorannahmen zu den Diagrammen sind, dass die betroffenen Patienten einen Zugang- oder Entlassungsprozess im Kontext der Intesivversorgung durchlaufen haben.</p>
+<p>Die Illustration möglicher bidirektionaler Überleitungs-Prozesse (analog zum <a href="https://breathe.ersjournals.com/content/16/2/200062">spezifischen Zulassungsprozess hier</a>) erscheint in diesem Kontext nicht zielführend.</p>
+<p>Der Workflow dient im Wesentlichen der Darstellung zu verschiedenen Möglichkeiten der Nutzung der REST-Schnittstelle zur Unterstützung des Workflows durch abfrage-basierte Kommunikation von Werten.</p>
+<h4 id="abfrage-zeitlich-folgend">Abfrage zeitlich folgend</h4>
+<p>Folgende Diagramme illustrieren Die Fälle, bei denen Daten zeitlich nach der Überleitung abgefragt werden (mittels HTTP GET).</p>
+<p>Folgendes Diagramm Illustriert den Workflow zu <strong>UC-VIT-ICU-NORM-001</strong> als BPMN-Prozess:</p>
+<img src="https://raw.githubusercontent.com/gematik/spec-ISiK-Vitalparameter-und-Koerpermasze/rc/main-stufe-4/Material/images/Abfrage-aus-ICU.PNG" alt="Nachträgliche Blutdruck-Abfrage aus Normalstation" width="90%"/>
+<p><strong>Hinweis:</strong> hier agiert das KIS als Client.</p>
+<p>Folgendes Diagramm Illustriert den Workflow zu <strong>UC-VIT-ICU-NORM-002</strong> als BPMN-Prozess:</p>
+<img src="https://raw.githubusercontent.com/gematik/spec-ISiK-Vitalparameter-und-Koerpermasze/rc/main-stufe-4/Material/images/Abfrage-aus-Normal.PNG" alt="Nachträgliche Blutdruck-Abfrage aus Intensivstation" width="90%"/>
+<h4 id="ubernahme-zeitlich-vorgelagert">Übernahme zeitlich vorgelagert</h4>
+<p>Denkbar sind auch Workflows, bei denen erhobene Daten aus einem System vor der Verlegung übermittelt werden. Siehe z.B. den Workflow zu <strong>UC-VIT-ICU-NORM-003</strong> als BPMN-Prozess:</p>
+<img src="https://raw.githubusercontent.com/gematik/spec-ISiK-Vitalparameter-und-Koerpermasze/rc/main-stufe-4/Material/images/Uebermittlung-an-ICU.PNG" alt="Vorgelagerte Übermittlung an Intensivstation" width="90%"/>
+<p>Hier genügt eine Abfrage per HTTP GET nicht (diese kann ggf. aber durch einen weiteren Kommunikationsschritt getriggert werden und damit die Vorab-Übermittlung unterstützen). An dieser Stelle werden keine weiteren Festlegungen zur vorgelagerten Übermittlung der  Daten erhoben und es wird keine direkte Schreiboperation auf FHIR-Basis des KIS im PDMS für diesen Fall gefordert. Die Vorab-Übermittlung könnte durch verschiedene Mechanismen unterstützt werden:</p>
+<ul>
+<li>FHIR Subscription (vgl. im ISiK Kontext <a href="https://simplifier.net/guide/isik-basis-v4/UebergreifendeFestlegungen-UebergreifendeFestlegungen_Patient-merge?version=current">Patient merge Notification</a>)</li>
+<li>Create-Interaktion (POST) (vgl. im ISiK Kontext <a href="https://simplifier.net/guide/isik-basis-v4/markdown-UebergreifendeFestlegungen-UebergreifendeFestlegungen_Rest?version=current">REST-API</a>)</li>
+<li>HL7 v2 Messaging</li>
+<li>etc.</li>
+</ul>
+
+                    </div>
+                    <div id="UebergreifendeUseCases-Intensivversorgung-Intensivversorgung_Profile">
+                        <h2 id="fhir-profile-des-use-case-uberleitung-normal-und-intensivversorgung">FHIR-Profile des Use Case Überleitung Normal- und Intensivversorgung</h2>
+<p>Im Rahmen des Use Case Überleitung Normal- und Intensivversorgung sind neben den Profilen des Moduls Vitalparameter - insbesondere MII Profile (<a href="ImplementationGuide-markdown-Datenobjekte-MII_Intensiv_Normal.html" title='ImplementationGuide/markdown/Datenobjekte/MII_Intensiv_Normal.md'>MII Profile der Intensiv- und Normalversorgung</a>) -  alle Profile des <a href="https://simplifier.net/isik-labor-v4">ISIK Support Modul Labor</a> relevant.</p>
+
+                    </div>
+
+        </div>
+
+    </div>
+</div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="ig-view-footer" role="contentinfo" aria-label="Footer">
+            
+<div class="container">
+    <div class="row">
+        <p>Powered by <b>SIMPLIFIER.NET</b></p>
+        <div>
+            HL7<sup>&reg;</sup> and FHIR<sup>&reg;</sup> are the registered trademarks of Health Level Seven International
+        </div>
+    </div>
+</div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
