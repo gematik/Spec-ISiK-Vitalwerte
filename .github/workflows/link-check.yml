@@ -2,12 +2,12 @@ name: Check Links
 # This workflow checks for broken links in the repository.
 
 on:
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
   pull_request:
     # Trigger the workflow on any pull request targeting any branch.
     branches:
       - '**'
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
 
 jobs:
   link_checker:
@@ -37,5 +37,4 @@ jobs:
             .
             --exclude-path ImplementationGuide/style
             --exclude-path Material
-            --cache
-            --max-concurrency 5
+            

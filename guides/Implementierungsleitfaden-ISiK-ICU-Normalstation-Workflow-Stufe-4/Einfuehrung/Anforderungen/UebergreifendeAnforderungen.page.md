@@ -4,7 +4,7 @@ topic: UebergreifendeAnforderungen
 
 # Übergreifende Anforderungen
 
-Es gelten alle übergreifenden Anforderungen entsprechend dem ISiK Basismodul.
+Es gelten alle übergreifenden Anforderungen entsprechend dem [ISiK Basismodul](https://simplifier.net/guide/isik-basis-403/Einfuehrung/UebergreifendeFestlegungen).
 
 Zudem gelten die Festlegungen gemäß dem Abschnitt zu den {{pagelink:Akteure, text: Akteuren}}.
 

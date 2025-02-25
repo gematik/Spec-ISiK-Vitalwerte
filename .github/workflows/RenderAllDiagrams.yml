@@ -37,18 +37,18 @@ jobs:
       # Download plantUML jar 
       - name: Download plantuml file
         run: |
-          wget -O plantuml.jar "https://github.com/plantuml/plantuml/releases/latest/download/plantuml.jar" 
+          wget -O plantuml.jar "https://github.com/plantuml/plantuml/releases/download/v1.2024.2/plantuml.jar" 
+          
                                 
-       # Ensure Folder exsists, otherwise, create it
+       # Clean Folder
       - name: Ensure and clean folder
         run: |
           img_dir=Material/images/diagrams
           mkdir -p $img_dir
-      # do not clean
-      # rm -rf Material/images/diagrams/*.svg
+          rm -rf Material/images/diagrams/*.svg
 
       # Generate the SVGs from PUML
-      - name: Render PUML to SVG files
+      - name: Render PUML to SVG and Move files
         run: |
           FileNamePaths=$(find . -path "*/images/src/*/*.puml" -exec dirname {} \; | sort -u)
           for dir in $FileNamePaths
@@ -72,34 +72,7 @@ jobs:
           format: svg
           action-mode: all
 
-      # Install note.js and bpmn-to-image
-      - name: Install Notejs and pbmn-to-image
-        uses: actions/setup-node@v4
-        with:
-          node-version: 18
-      - run: npm install -g bpmn-to-image
-        
-      # Generate the SVGs from BPMN
-      - name: Render BPMN to SVG files
-        run: |
-          FileNamePaths=$(find . -path "*/images/src/*/*.bpmn" -exec dirname {} \; | sort -u)
-          for dir in $FileNamePaths
-          do
-            # Render SVGs from BPMN
-            echo $dir
-            FileBaseNames=$(find $dir -name "*.bpmn" -exec basename "{}" ".bpmn" \; | sort -u)
-            #FileBaseNames=$(find $dir -name "*.bpmn" | xargs -L1 -I{} basename "{}")
-            
-            for base in $FileBaseNames
-            do
-              echo $base
-              bpmn-to-image "$dir/$base.bpmn":"$dir/$base.svg";
-            done
-            
-          done  
-
       # copies the created SVG files to the images/diagrams folder and deletes the drawio files
-      # mv for copy and delete, here
       - name: Move SVGs to target image folder
         run: |
           img_dir=Material/images/diagrams
@@ -108,8 +81,7 @@ jobs:
           for dir in $FileNamePaths
           do
             # Move SVGs to out directory
-            # find $dir -name "*.svg" -exec rm -rf {} $img_dir \;
-            find $dir -name "*.svg" -exec mv -f {} $img_dir \;
+            find $dir -name "*.svg" -exec mv {} $img_dir \;
           done
       
       ## add and commit the new generated files
@@ -130,7 +102,3 @@ jobs:
           commit_user_name: GitHub Actions Bot
           commit_user_email: ActionBot@github.com
           commit_message: auto-generated diagrams by GitHub Action after source code change
-
-      - name: "Run if no changes have been detected"
-        if: steps.auto-commit-action.outputs.changes_detected == 'false'
-        run: echo "No Changes!"
