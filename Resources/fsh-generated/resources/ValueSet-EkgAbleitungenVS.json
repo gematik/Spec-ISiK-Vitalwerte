@@ -9,7 +9,7 @@
   "url": "https://gematik.de/fhir/isik/v3/VitalparameterUndKoerpermasze/ValueSet/EkgAbleitungenVS",
   "experimental": false,
   "publisher": "gematik GmbH",
-  "date": "2025-01-28",
+  "date": "2025-02-25",
   "compose": {
     "include": [
       {
