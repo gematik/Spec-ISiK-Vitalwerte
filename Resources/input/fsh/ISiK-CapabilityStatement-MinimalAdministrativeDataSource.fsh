@@ -228,7 +228,7 @@ Die Verwendung der CapabilityStatement-Expectation-Extension ist im CapabilitySt
         **Anwendungshinweis:**   
         Weitere Details siehe [FHIR-Kernspezifikation](https://hl7.org/fhir/R4/search.html#token).  "
     * searchParam[+]
-      * insert Expectation(#SHALL)
+      * insert Expectation(#MAY)
       * name = "class"
       * definition = "http://hl7.org/fhir/SearchParameter/Encounter-class"
       * type = #token
@@ -269,7 +269,7 @@ Die Verwendung der CapabilityStatement-Expectation-Extension ist im CapabilitySt
         **Anwendungshinweis:**   
         Weitere Details siehe [FHIR-Kernspezifikation](https://hl7.org/fhir/R4/search.html#reference).  "
     * searchParam[+]
-      * insert Expectation(#SHALL)
+      * insert Expectation(#MAY)
       * name = "account"
       * definition = "http://hl7.org/fhir/SearchParameter/Encounter-account"
       * type = #reference
