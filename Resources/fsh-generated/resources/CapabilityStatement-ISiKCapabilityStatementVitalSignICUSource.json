@@ -2,11 +2,11 @@
   "resourceType": "CapabilityStatement",
   "id": "ISiKCapabilityStatementVitalSignICUSource",
   "url": "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementVitalSignICUSource",
+  "version": "4.0.1",
   "status": "active",
   "experimental": false,
-  "version": "4.0.1",
   "publisher": "gematik GmbH",
-  "date": "2025-02-20",
+  "date": "2025-02-21",
   "implementationGuide": [
     "https://gematik.de/fhir/isik/ImplementationGuide/ISiK-Vitalparameter|4.0.1"
   ],
