@@ -1,0 +1,134 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ISiKEkg",
+  "url": "https://gematik.de/fhir/isik/v3/VitalparameterUndKoerpermasze/StructureDefinition/ISiKEkg",
+  "version": "3.0.5",
+  "name": "ISiKEkg",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-02-25",
+  "publisher": "gematik GmbH",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.status",
+        "path": "Observation.status",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category",
+        "path": "Observation.category",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category.coding",
+        "path": "Observation.category.coding",
+        "patternCoding": {
+          "code": "procedure",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        }
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "11524-6",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.encounter",
+        "path": "Observation.encounter",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Observation.device",
+        "path": "Observation.device",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component.code",
+        "path": "Observation.component.code",
+        "mustSupport": true,
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://gematik.de/fhir/isik/v3/VitalparameterUndKoerpermasze/ValueSet/EkgAbleitungenVS",
+          "description": "Codes identifying the EKG lead"
+        }
+      },
+      {
+        "id": "Observation.component.code.coding",
+        "path": "Observation.component.code.coding",
+        "min": 1
+      },
+      {
+        "id": "Observation.component.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "SampledData"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component.value[x].origin",
+        "path": "Observation.component.value[x].origin",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component.value[x].period",
+        "path": "Observation.component.value[x].period",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component.value[x].dimensions",
+        "path": "Observation.component.value[x].dimensions",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component.value[x].data",
+        "path": "Observation.component.value[x].data",
+        "min": 1,
+        "mustSupport": true
+      }
+    ]
+  }
+}

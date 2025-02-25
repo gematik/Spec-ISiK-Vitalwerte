@@ -1,0 +1,78 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "EkgAbleitungenVS",
+  "id": "EkgAbleitungenVS",
+  "title": "SNOMED CT codes der EKG Ableitungen",
+  "description": "ValueSet mit den SNOMED CT codes der EKG Ableitungen",
+  "version": "3.0.5",
+  "url": "https://gematik.de/fhir/isik/v3/VitalparameterUndKoerpermasze/ValueSet/EkgAbleitungenVS",
+  "experimental": false,
+  "publisher": "gematik GmbH",
+  "date": "2025-02-25",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "257472005",
+            "display": "aVF"
+          },
+          {
+            "code": "257473000",
+            "display": "aVL"
+          },
+          {
+            "code": "257474006",
+            "display": "aVR"
+          },
+          {
+            "code": "285658004",
+            "display": "CM5"
+          },
+          {
+            "code": "272728002",
+            "display": "ECG lead site"
+          },
+          {
+            "code": "272729005",
+            "display": "Lead I"
+          },
+          {
+            "code": "272730000",
+            "display": "Lead II"
+          },
+          {
+            "code": "272731001",
+            "display": "Lead III"
+          },
+          {
+            "code": "257475007",
+            "display": "Lead site V1"
+          },
+          {
+            "code": "257476008",
+            "display": "Lead site V2"
+          },
+          {
+            "code": "257477004",
+            "display": "Lead site V3"
+          },
+          {
+            "code": "257478009",
+            "display": "Lead site V4"
+          },
+          {
+            "code": "257479001",
+            "display": "Lead site V5"
+          },
+          {
+            "code": "257480003",
+            "display": "Lead site V6"
+          }
+        ]
+      }
+    ]
+  }
+}
