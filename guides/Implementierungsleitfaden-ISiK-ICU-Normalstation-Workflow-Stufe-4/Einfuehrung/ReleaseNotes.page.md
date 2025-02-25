@@ -15,5 +15,6 @@ Darüber hinaus wird die Versionierung unabhängig von allen anderen Modulen und
 
 ## Version 4.0.0
 
-Datum: tbd.
+Datum: 25.2.2025
+
 * `improved` Refactoring des Workflows als eigenständiger ImplementationGuide
