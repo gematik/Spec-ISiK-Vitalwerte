@@ -5,12 +5,15 @@ RuleSet: Meta
 * ^publisher = "gematik GmbH"
 * ^date = "2025-02-21"
 
-RuleSet: Meta-CapabilityStatement
+RuleSet: Meta-Inst
+* version = "4.0.1"
 * status = #active
 * experimental = false
-* version = "4.0.1"
 * publisher = "gematik GmbH"
 * date = "2025-02-21"
+
+RuleSet: Meta-CapabilityStatement
+* insert Meta-Inst
 * implementationGuide = "https://gematik.de/fhir/isik/ImplementationGuide/ISiK-Vitalparameter|4.0.1"
 
 RuleSet: supporteProfile-SHALL(canonical, expectation)

@@ -21,7 +21,6 @@ Das CapabilityStatement KANN darüber hinaus die mit `MAY` gekennzeichneten Funk
 sofern diese in der Instanz implementiert wurden.
 
 Die Verwendung der CapabilityStatement-Expectation-Extension ist im CapabilityStatement der Server-Instanz nicht erforderlich."
-* insert Meta-Inst
 * insert Meta-CapabilityStatement
 * name = "ISiKCapabilityStatementMinimalAdministrativeDataSourceVital"
 * title = "IISiK CapabilityStatement MinimalAdministrativeDataSourceVital"
