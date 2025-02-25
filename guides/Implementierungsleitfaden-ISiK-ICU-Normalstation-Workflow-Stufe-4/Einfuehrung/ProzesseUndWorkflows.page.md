@@ -7,13 +7,13 @@ Vorannahmen zu den unten modellierten Workflows sind, dass die betroffenen Patie
 Die Illustration möglicher bidirektionaler Überleitungs-Prozesse (analog zum [spezifischen Zulassungsprozess hier](https://breathe.ersjournals.com/content/16/2/200062)) erscheint in diesem Kontext nicht zielführend.
 
 ## Workflow - Support-Prozess zur Datenübermittlung bei Überleitung
-Zur Abbildung des bidirektionalen Überleitungsprozesses zwischen einer Intensiv- und einer Normalstation können KIS und PDMS jeweils die Rolle des KIS und Client einnehmen. 
-
-Siehe dazu Abschnitt zur Rest-Api im Basismodul (LINK fehlt ggf.).
+Zur Abbildung des bidirektionalen Überleitungsprozesses zwischen einer Intensiv- und einer Normalstation können KIS und PDMS jeweils die Rolle des KIS und Client einnehmen.
 
 ### Diagramme
 
-Der Workflow dient im Wesentlichen der Darstellung zu verschiedenen Möglichkeiten der Nutzung der REST-Schnittstelle zur Unterstützung des Workflows durch abfrage-basierte Kommunikation von Werten.
+Der Workflow dient im Wesentlichen der Darstellung zu verschiedenen Möglichkeiten der Nutzung der REST-Schnittstelle zur Unterstützung des Workflows durch abfrage-basierte Kommunikation von Daten.
+
+Für Festlegungen zum REST-Abfragen siehe den [Abschnitt zur REST-API im Basismodul](https://simplifier.net/guide/isik-basis-403/Einfuehrung/UebergreifendeFestlegungen/UebergreifendeFestlegungen_Rest).
 
 #### Abfrage zeitlich folgend 
 Folgende Diagramme illustrieren Die Fälle, bei denen Daten zeitlich nach der Überleitung abgefragt werden (mittels HTTP GET).
