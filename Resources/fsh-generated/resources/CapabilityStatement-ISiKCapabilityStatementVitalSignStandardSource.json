@@ -2,9 +2,9 @@
   "resourceType": "CapabilityStatement",
   "id": "ISiKCapabilityStatementVitalSignStandardSource",
   "url": "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementVitalSignStandardSource",
+  "version": "4.0.1",
   "status": "active",
   "experimental": false,
-  "version": "4.0.1",
   "publisher": "gematik GmbH",
   "date": "2025-02-24",
   "implementationGuide": [
