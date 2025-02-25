@@ -18,23 +18,20 @@ Profile: ISIKPatient, ISiK Encounter
 
 Interaktionen: READ, SEARCH
 
-
 ## Administrative Data Consumer (bisher: “Client” bzw "Basis-Client") 
 Transaction (M): Find Administrative Data
 
 Transaction (O): Patient Merge
 
-## VitalSign Standard Source 
-Transaction(M): Find Basic VitalSigns
 
-Profile: ISiK Profile Vitalparameter (Blutdruck, Temp, Puls, O2 etc.)
+## VitalSign ICU Source Minimal
+Transaction(M): Find Advanced VitalSigns
+
+Profile: Profile MI-I
 
 Interaction: READ, SEARCH
 
-## VitalSign Standard Consumer 
-Transaction(M): Find Basic VitalSigns
-
-## VitalSign ICU Source
+## VitalSign ICU Source Extended
 Transaction(M): Find Advanced VitalSigns
 
 Profile: Profile MI-I
@@ -49,18 +46,22 @@ Transaction(M): Find Advanced VitalSigns
 Basis-Server entsprechend der Definition zu den [bestätigungsrelevanten Systeme](https://simplifier.net/guide/isik-basis-v4/UebergreifendeFestlegungen_BestaetigungsrelevanteSysteme?version=current) MÜSSEN folgende Akteure / Operationen implementieren:
 
 - Minimal Administrative Data Source (bisher: “Server” bzw "Basis-Server")
+- VitalSign ICU Source Minimal
+
+Basis-Server entsprechend der Definition zu den [bestätigungsrelevanten Systeme](https://simplifier.net/guide/isik-basis-v4/UebergreifendeFestlegungen_BestaetigungsrelevanteSysteme?version=current) KÖNNEN folgende Akteure / Operationen implementieren:
+
 - Administrative Data Consumer (bisher: “Client” bzw "Basis-Client") 
-- VitalSign Standard Source 
 - VitalSign-ICU Consumer 
 
 Vitalparameter-Server entsprechend der Definition zu den [bestätigungsrelevanten Systeme](https://simplifier.net/guide/isik-basis-v4/UebergreifendeFestlegungen_BestaetigungsrelevanteSysteme?version=current) MÜSSEN folgende Akteure / Operationen implementieren:
 
 - Minimal Administrative Data Source (bisher: “Server” bzw "Basis-Server")
+- VitalSign ICU Source Minimal
+- VitalSign ICU Source Extended
+
+Vitalparameter-Server entsprechend der Definition zu den [bestätigungsrelevanten Systeme](https://simplifier.net/guide/isik-basis-v4/UebergreifendeFestlegungen_BestaetigungsrelevanteSysteme?version=current) KÖNNEN folgende Akteure / Operationen implementieren:
 - Administrative Data Consumer (bisher: “Client” bzw "Basis-Client") 
-- VitalSign Standard Source 
-- VitalSign Standard Consumer 
-- VitalSign ICU Source
-- VitalSign-ICU Consumer 
+- VitalSign-ICU Consumer
 
 Primär hervorzuheben sind entsprechend der Definition der DKG dabei.
 
