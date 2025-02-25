@@ -7,7 +7,7 @@ Die erste Ziffer X bezeichnet ein Major-Release und regelt die Gültigkeit von R
 
 Version: 3.0.5
 
-Datum: tbd.
+Datum: 25.02.2025
 
 * `improve` Das ISiKEkgExample enthielt einen veralteten Eintrag in meta.profile der die validierung verhinderte. Dieser wurde entfernt. https://github.com/gematik/spec-ISiK-Vitalparameter-und-Koerpermasze/pull/198
 * `change` Die Verbindlichkeit des Suchparameters `subject` wurde von SHALL auf MAY reduziert, da der Suchparameter `patient` für ISiK-Zwecke ausreichend ist. https://github.com/gematik/spec-ISiK-Vitalparameter-und-Koerpermasze/pull/192
