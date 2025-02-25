@@ -1,17 +1,17 @@
 RuleSet: Meta
 * ^status = #active
 * ^experimental = false
-* ^version = "4.0.1"
+* ^version = "4.0.2"
 * ^publisher = "gematik GmbH"
-* ^date = "2025-02-24"
+* ^date = "2025-02-25"
 
 RuleSet: Meta-CapabilityStatement
 * status = #active
 * experimental = false
-* version = "4.0.1"
+* version = "4.0.2"
 * publisher = "gematik GmbH"
-* date = "2025-02-24"
-* implementationGuide = "https://gematik.de/fhir/isik/ImplementationGuide/ISiK-Vitalparameter|4.0.1"
+* date = "2025-02-25"
+* implementationGuide = "https://gematik.de/fhir/isik/ImplementationGuide/ISiK-Vitalparameter|4.0.2"
 
 RuleSet: supporteProfile-SHALL(canonical, expectation)
 * rest.resource[=].supportedProfile[+] = Canonical({canonical})
