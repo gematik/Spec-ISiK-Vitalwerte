@@ -14,7 +14,7 @@ Title: "SD MII ICU Puls"
   * ^patternQuantity.system = "http://unitsofmeasure.org"
   * ^patternQuantity.unit = "beats per minute"
   * unit 1..
-  * code from VS_MII_ICU_Unit_equivalent_UCUM_beats_per_minute (required)
+  * code = #/min
 * dataAbsentReason ..0
 * bodySite.coding = $sct#11527006
 * bodySite.coding MS

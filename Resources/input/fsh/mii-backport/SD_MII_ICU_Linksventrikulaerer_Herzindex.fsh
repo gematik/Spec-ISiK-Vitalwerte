@@ -14,7 +14,7 @@ Title: "SD MII ICU Linksventrikulaerer Herzindex"
   * ^patternQuantity.system = "http://unitsofmeasure.org"
   * ^patternQuantity.unit = "liter per minute and square meter"
   * unit 1..
-  * code from VS_MII_ICU_Unit_equivalent_UCUM_L_per_minute_and_squaremeter (required)
+  * code = #L/min/m2
 * bodySite = $sct#87878005
 
 Instance: Linksventrikulaerer-Herzindex
@@ -29,5 +29,5 @@ Usage: #example
 * effectivePeriod
   * start = "2019-12-23T09:30:10+01:00"
   * end = "2019-12-23T10:30:10+01:00"
-* valueQuantity = 3 'L/(min.m2)' "liter per minute and square meter"
+* valueQuantity = 3 'L/min/m2' "liter per minute and square meter"
 * bodySite = $sct#87878005 "Left cardiac ventricular structure"

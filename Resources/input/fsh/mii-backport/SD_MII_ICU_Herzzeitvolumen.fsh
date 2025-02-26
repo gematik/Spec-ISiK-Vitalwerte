@@ -10,9 +10,10 @@ Title: "SD MII ICU Herzzeitvolumen"
   * coding[loinc] = $loinc#8741-1
   * coding[IEEE-11073] 1..1
   * coding[IEEE-11073] = $IEEE11073#150276
-* valueQuantity from VS_MII_ICU_Unit_equivalent_UCUM_L_per_minute (required)
+* valueQuantity 
   * ^patternQuantity.unit = "liter per minute"
   * unit 1..
+  * code = #L/min
 
 Instance: Herzzeitvolumen
 InstanceOf: SD_MII_ICU_Herzzeitvolumen

@@ -13,7 +13,7 @@ Title: "SD MII ICU Systemischer Vaskulaerer Widerstandsindex"
 * valueQuantity
   * ^patternQuantity.unit = "dyne second per centimeter5 and square meter"
   * unit 1..
-  * code from VS_MII_ICU_Unit_equivalent_UCUM_dyn_s_cm5_m2 (required)
+  * code = #dyn.s/cm5/m2
 * bodySite 0..0
   * ^comment = "Der Wert ist keiner bodySite zuordenbar"
 
@@ -29,4 +29,4 @@ Usage: #example
 * effectivePeriod
   * start = "2019-12-23T09:30:10+01:00"
   * end = "2019-12-23T10:30:10+01:00"
-* valueQuantity = 2000 'dyn.s/(cm5.m2)' "dyne second per centimeter5 and square meter"
+* valueQuantity = 2000 'dyn.s/cm5/m2' "dyne second per centimeter5 and square meter"
