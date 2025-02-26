@@ -9,6 +9,9 @@ Usage: #definition
 * description = "Das vorliegende CapabilityStatement beschreibt grundlegende Interaktionen die ein ISiK-konformes System unterstützen muss.
 
 **HISTORIE:**    
+
+*Historie*: mit der Version 4.0.1 des IG ICU-Normalstation-Workflow wurde das vorliegende CapabilityStatement überarbeitet.
+
 *Version 4.0.0*  
 * `change` Initialisierung des CapabilityStatements.   "
 

@@ -10,6 +10,8 @@ Usage: #definition
   
 **HISTORIE:**    
 
+*Historie*: mit der Version 4.0.1 des IG ICU-Normalstation-Workflow wurde das vorliegende CapabilityStatement überarbeitet.
+
 **Version 4.0.1**
 
 * `change` Die Verbindlichkeit des Suchparameters `subject` wurde von SHALL auf MAY reduziert, da der Suchparameter `patient` für ISiK-Zwecke ausreichend ist.   

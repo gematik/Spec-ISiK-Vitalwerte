@@ -1,4 +1,4 @@
 greeting: Hello World!
 capability: https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementVitalSignICUSourceMinimal 
 capability: https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementVitalSignICUSourceExtended
- 
+ capability: https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementMinimalAdministrativeDataSource
