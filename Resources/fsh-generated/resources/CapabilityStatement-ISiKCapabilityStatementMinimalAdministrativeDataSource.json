@@ -4,11 +4,11 @@
   "url": "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementMinimalAdministrativeDataSource",
   "status": "active",
   "experimental": false,
-  "version": "4.0.1",
+  "version": "4.0.2",
   "publisher": "gematik GmbH",
-  "date": "2025-02-24",
+  "date": "2025-02-25",
   "implementationGuide": [
-    "https://gematik.de/fhir/isik/ImplementationGuide/ISiK-Vitalparameter|4.0.1"
+    "https://gematik.de/fhir/isik/ImplementationGuide/ISiK-Vitalparameter|4.0.2"
   ],
   "name": "ISiKCapabilityStatementISiKCapabilityStatementMinimalAdministrativeDataSource",
   "title": "ISiK CapabilityStatementISiKCapabilityStatementMinimalAdministrativeDataSource",

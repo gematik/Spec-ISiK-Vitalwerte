@@ -1,7 +1,7 @@
 {
   "resourceType": "CapabilityStatement",
-  "id": "ISiKCapabilityStatementVitalSignStandardSource",
-  "url": "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementVitalSignStandardSource",
+  "id": "ISiKCapabilityStatementVitalSignICUSourceMinimal",
+  "url": "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementVitalSignICUSourceMinimal",
   "status": "active",
   "experimental": false,
   "version": "4.0.2",
@@ -10,8 +10,8 @@
   "implementationGuide": [
     "https://gematik.de/fhir/isik/ImplementationGuide/ISiK-Vitalparameter|4.0.2"
   ],
-  "name": "ISiKCapabilityStatementVitalSignStandardSource",
-  "title": "ISiK CapabilityStatement Vitalparameter Server Hospital",
+  "name": "ISiKCapabilityStatementVitalSignICUSourceMinimal",
+  "title": "ISiK CapabilityStatement VitalSign ICU Source Minimal",
   "contact": [
     {
       "telecom": [
@@ -56,16 +56,23 @@
           ],
           "type": "Observation",
           "supportedProfile": [
-            "https://gematik.de/fhir/isik/StructureDefinition/ISiKAtemfrequenz",
-            "https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell",
-            "https://gematik.de/fhir/isik/StructureDefinition/ISiKHerzfrequenz",
-            "https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpergewicht",
-            "https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpergroesse",
-            "https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpertemperatur",
-            "https://gematik.de/fhir/isik/StructureDefinition/ISiKKopfumfang",
-            "https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell",
-            "https://gematik.de/fhir/isik/StructureDefinition/ISiKGCS",
-            "https://gematik.de/fhir/isik/StructureDefinition/ISiKEKG",
+            "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-intrakranieller-druck-icp",
+            "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpergewicht-percentil-altersabhaengig",
+            "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpergroesse-percentil-altersabhaengig",
+            "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-ideales-koerpergewicht",
+            "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-o2saettigung-im-arteriellen-blut-durch-pulsoxymetrie",
+            "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-puls",
+            "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-kern",
+            "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-gelenk",
+            "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-stirn",
+            "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-nasal",
+            "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-leiste",
+            "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-achsel",
+            "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-unter-der-zunge",
+            "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-vaginal",
+            "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-harnblase",
+            "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-rektal",
+            "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-trommelfell",
             "https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchungSerumkreatinin",
             "https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchungPCT",
             "https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchungCRP",
@@ -152,7 +159,63 @@
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "MAY"
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
                 }
               ]
             },
