@@ -1,9 +1,9 @@
 - name: Index
   filename: Index.page.md
 - name: 'Akteur: VitalSignStandardSource'
-  filename: Akteur-ISiKCapabilityStatementVitalSignStandardSource.page.md
+  filename: Akteur-ISiKCapabilityStatementVitalSignICUSourceMinimal.page.md
 - name: 'Akteur: VitalSignICUSource'
-  filename: Akteur-ISiKCapabilityStatementVitalSignICUSource.page.md
+  filename: Akteur-ISiKCapabilityStatementVitalSignICUSourceExtended.page.md
 - name: 'Akteur: MinimalAdministrativeDataSource'
   filename: Akteur-ISiKCapabilityStatementMinimalAdministrativeDataSource.page.md
 
