@@ -22,7 +22,7 @@
       ]
     }
   ],
-  "description": "Das vorliegende CapabilityStatement beschreibt verpflichtende Interaktionen die ein ISiK-konformes PDMS-System zur Unterstützung des IG ICu-Normalstation-Workflow implementieren muss",
+  "description": "Das vorliegende CapabilityStatement beschreibt verpflichtende Interaktionen die ein ISiK-konformes PDMS-System zur Unterstützung des IG ICU-Normalstation-Workflow implementieren muss",
   "jurisdiction": [
     {
       "coding": [
