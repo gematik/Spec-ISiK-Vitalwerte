@@ -60,16 +60,17 @@
         "path": "Observation.value[x]",
         "patternQuantity": {
           "unit": "liter per minute"
-        },
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://gematik.de/fhir/isik/ValueSet/vs-mii-icu-unit-equivalent-ucum-l-per-minute"
         }
       },
       {
         "id": "Observation.value[x].unit",
         "path": "Observation.value[x].unit",
         "min": 1
+      },
+      {
+        "id": "Observation.value[x].code",
+        "path": "Observation.value[x].code",
+        "patternCode": "L/min"
       }
     ]
   }

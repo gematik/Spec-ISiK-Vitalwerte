@@ -1,11 +1,11 @@
 [
   {
-    "outputFile": "CapabilityStatement-ISiKCapabilityStatementMinimalAdministrativeDataSource.json",
-    "fshName": "ISiKCapabilityStatementMinimalAdministrativeDataSource",
+    "outputFile": "CapabilityStatement-ISiKCapabilityStatementMinimalAdministrativeDataSourceVital.json",
+    "fshName": "ISiKCapabilityStatementMinimalAdministrativeDataSourceVital",
     "fshType": "Instance",
     "fshFile": "ISiK-CapabilityStatement-MinimalAdministrativeDataSource.fsh",
     "startLine": 1,
-    "endLine": 130
+    "endLine": 345
   },
   {
     "outputFile": "CapabilityStatement-ISiKCapabilityStatementVitalSignICUSource.json",
@@ -36,8 +36,8 @@
     "fshName": "Herzzeitvolumen",
     "fshType": "Instance",
     "fshFile": "mii-backport/SD_MII_ICU_Herzzeitvolumen.fsh",
-    "startLine": 17,
-    "endLine": 29
+    "startLine": 18,
+    "endLine": 30
   },
   {
     "outputFile": "Observation-ISiKAtemfrequenzExample.json",
@@ -621,7 +621,7 @@
     "fshType": "Profile",
     "fshFile": "mii-backport/SD_MII_ICU_Herzzeitvolumen.fsh",
     "startLine": 1,
-    "endLine": 15
+    "endLine": 16
   },
   {
     "outputFile": "StructureDefinition-sd-mii-icu-ideales-koerpergewicht.json",
@@ -1021,7 +1021,7 @@
     "fshType": "ValueSet",
     "fshFile": "mii-backport/valueSet/VS_MII_ICU_Code_Monitoring_und_Vitaldaten_ISO11073.fsh",
     "startLine": 1,
-    "endLine": 51
+    "endLine": 53
   },
   {
     "outputFile": "ValueSet-vs-mii-icu-code-monitoring-und-vitaldaten-loinc.json",
@@ -1044,38 +1044,6 @@
     "fshName": "VS_MII_ICU_Method_Observation_Blutdruck",
     "fshType": "ValueSet",
     "fshFile": "mii-backport/valueSet/VS_MII_ICU_Method_Observation_Blutdruck.fsh",
-    "startLine": 1,
-    "endLine": 7
-  },
-  {
-    "outputFile": "ValueSet-vs-mii-icu-unit-equivalent-ucum-beats-per-minute.json",
-    "fshName": "VS_MII_ICU_Unit_equivalent_UCUM_beats_per_minute",
-    "fshType": "ValueSet",
-    "fshFile": "mii-backport/valueSet/VS_MII_ICU_Unit_equivalent_UCUM_beats_per_minute.fsh",
-    "startLine": 1,
-    "endLine": 9
-  },
-  {
-    "outputFile": "ValueSet-vs-mii-icu-unit-equivalent-ucum-dyn-s-cm5-m2.json",
-    "fshName": "VS_MII_ICU_Unit_equivalent_UCUM_dyn_s_cm5_m2",
-    "fshType": "ValueSet",
-    "fshFile": "mii-backport/valueSet/VS_MII_ICU_Unit_equivalent_UCUM_dyn_s_cm5_m2.fsh",
-    "startLine": 1,
-    "endLine": 9
-  },
-  {
-    "outputFile": "ValueSet-vs-mii-icu-unit-equivalent-ucum-l-per-minute-and-squaremeter.json",
-    "fshName": "VS_MII_ICU_Unit_equivalent_UCUM_L_per_minute_and_squaremeter",
-    "fshType": "ValueSet",
-    "fshFile": "mii-backport/valueSet/VS_MII_ICU_Unit_equivalent_UCUM_L_per_minute_and_squaremeter.fsh",
-    "startLine": 1,
-    "endLine": 9
-  },
-  {
-    "outputFile": "ValueSet-vs-mii-icu-unit-equivalent-ucum-l-per-minute.json",
-    "fshName": "VS_MII_ICU_Unit_equivalent_UCUM_L_per_minute",
-    "fshType": "ValueSet",
-    "fshFile": "mii-backport/valueSet/VS_MII_ICU_Unit_equivalent_UCUM_L_per_minute.fsh",
     "startLine": 1,
     "endLine": 7
   }

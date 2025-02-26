@@ -70,10 +70,7 @@
       {
         "id": "Observation.value[x].code",
         "path": "Observation.value[x].code",
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://gematik.de/fhir/isik/ValueSet/vs-mii-icu-unit-equivalent-ucum-beats-per-minute"
-        }
+        "patternCode": "/min"
       },
       {
         "id": "Observation.dataAbsentReason",

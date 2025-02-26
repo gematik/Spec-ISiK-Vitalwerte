@@ -20,7 +20,7 @@
       {
         "id": "Observation.code.coding",
         "path": "Observation.code.coding",
-        "min": 3
+        "min": 4
       },
       {
         "id": "Observation.code.coding:sct",
@@ -59,7 +59,7 @@
         "id": "Observation.code.coding:loinc-fhir-core",
         "path": "Observation.code.coding",
         "sliceName": "loinc-fhir-core",
-        "min": 0,
+        "min": 1,
         "max": "*",
         "patternCoding": {
           "code": "2708-6",
