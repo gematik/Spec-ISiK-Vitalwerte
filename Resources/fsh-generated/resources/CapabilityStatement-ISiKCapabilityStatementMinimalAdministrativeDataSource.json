@@ -22,7 +22,7 @@
       ]
     }
   ],
-  "description": "Das vorliegende CapabilityStatement beschreibt grundlegende Interaktionen die ein ISiK-konformes System unterstützen muss.\n\n**HISTORIE:**    \n*Version 4.0.0*  \n* `change` Initialisierung des CapabilityStatements.   ",
+  "description": "Das vorliegende CapabilityStatement beschreibt grundlegende Interaktionen die ein ISiK-konformes System unterstützen muss.\n\n**HISTORIE:**    \n\n*Historie*: mit der Version 4.0.1 des IG ICU-Normalstation-Workflow wurde das vorliegende CapabilityStatement überarbeitet.\n\n*Version 4.0.0*  \n* `change` Initialisierung des CapabilityStatements.   ",
   "jurisdiction": [
     {
       "coding": [
