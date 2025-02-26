@@ -1,6 +1,6 @@
 ---
-topic: ISiKCapabilityStatementVitalSignICUSource
-canonical: https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementVitalSignICUSource
+topic: ISiKCapabilityStatementVitalSignICUSourceMinimal 
+canonical: https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementVitalSignICUSourceMinimal 
 ---
 ## Konformitätserklärung [(CapabilityStatement)](https://hl7.org/fhir/R4/capabilitystatement.html)
 
