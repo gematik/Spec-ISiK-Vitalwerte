@@ -9,6 +9,11 @@ Version: 4.0.2
 
 Datum: tbd.
 
+* `improve` .source of mii-icu-1 invariant corrected https://github.com/gematik/spec-ISiK-Vitalparameter-und-Koerpermasze/pull/203
+* `improve` UCUM-ValueSets und bindings für valueQuantity-Profile entfernt, ersetzt durch ein pattern auf valueQuantity.code um eine einheitliche UCUM Nutzung zu gewährleisten. https://github.com/gematik/spec-ISiK-Vitalparameter-und-Koerpermasze/pull/203
+* `improve` VS_MII_ICU_Code_Monitoring_und_Vitaldaten_ISO11073 fehlten zwei Codes die in Profilen verwendet wurden, diese wurden ergänzt. https://github.com/gematik/spec-ISiK-Vitalparameter-und-Koerpermasze/pull/203
+* `improve` ändern der Kardinalität des loinc-fhir-core slices auf 1.. um den verpflichtenden magic loinc value in jeder Instanz zu gewährleisten. https://github.com/gematik/spec-ISiK-Vitalparameter-und-Koerpermasze/pull/203
+
 ---
 
 Version: 4.0.1
