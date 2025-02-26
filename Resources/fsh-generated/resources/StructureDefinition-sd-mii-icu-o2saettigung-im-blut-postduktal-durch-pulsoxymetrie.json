@@ -20,7 +20,7 @@
       {
         "id": "Observation.code.coding",
         "path": "Observation.code.coding",
-        "min": 3
+        "min": 2
       },
       {
         "id": "Observation.code.coding:sct",
@@ -52,30 +52,6 @@
           "code": "160300",
           "system": "urn:iso:std:iso:11073:10101"
         }
-      },
-      {
-        "id": "Observation.code.coding:loinc-fhir-core",
-        "path": "Observation.code.coding",
-        "sliceName": "loinc-fhir-core",
-        "min": 1,
-        "max": "*",
-        "patternCoding": {
-          "code": "2708-6",
-          "system": "http://loinc.org"
-        },
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:loinc-fhir-core.system",
-        "path": "Observation.code.coding.system",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:loinc-fhir-core.code",
-        "path": "Observation.code.coding.code",
-        "min": 1,
-        "mustSupport": true
       },
       {
         "id": "Observation.value[x]",

@@ -27,10 +27,6 @@
         "code": "160296",
         "system": "urn:iso:std:iso:11073:10101",
         "display": "Preductal SpO2"
-      },
-      {
-        "code": "2708-6",
-        "system": "http://loinc.org"
       }
     ]
   },
