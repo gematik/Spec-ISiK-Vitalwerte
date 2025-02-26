@@ -13,7 +13,7 @@ Title: "SD MII ICU Linksventrikulaerer Herzindex durch Indikatorverduennung"
 * valueQuantity 1..
   * ^patternQuantity.system = "http://unitsofmeasure.org"
   * unit 1..
-  * code from VS_MII_ICU_Unit_equivalent_UCUM_L_per_minute_and_squaremeter (required)
+  * code = #L/min/m2
 
 Instance: Linksventrikulaerer-Herzindex-Durch-Indikatorverduennung
 InstanceOf: SD_MII_ICU_Linksventrikulaerer_Herzindex_Durch_Indikatorverduennung

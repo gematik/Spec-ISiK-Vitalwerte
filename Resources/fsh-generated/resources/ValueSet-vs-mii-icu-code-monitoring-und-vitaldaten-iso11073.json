@@ -198,6 +198,14 @@
           {
             "code": "150356",
             "display": "Airway temperature"
+          },
+          {
+            "code": "150408",
+            "display": "MDC_VOL_BLD_VENT_LEFT_STROKE"
+          },
+          {
+            "code": "150636",
+            "display": "MDC_VOL_BLD_STROKE_INDEX"
           }
         ]
       }

@@ -10,9 +10,6 @@ Title: "SD MII ICU Sauerstoffsaettigung Im Blut Preduktal Durch Pulsoxymetrie"
   * coding[loinc] = $loinc#59407-7
   * coding[IEEE-11073] 1..1
   * coding[IEEE-11073] = $IEEE11073#160296
-  * coding contains loinc-fhir-core 0..* MS
-  * coding[loinc-fhir-core] = $loinc#2708-6
-    * system 1.. MS
     * code 1.. MS
 * valueQuantity = $unitsofmeasure#% "percent"
   * unit 1..

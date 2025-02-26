@@ -14,7 +14,7 @@ Title: "SD MII ICU Pulmonalvaskulaerer Widerstandsindex"
   * ^patternQuantity.system = "http://unitsofmeasure.org"
   * ^patternQuantity.unit = "dyne second per centimeter5 and square meter"
   * unit 1..
-  * code from VS_MII_ICU_Unit_equivalent_UCUM_dyn_s_cm5_m2 (required)
+  * code = #dyn.s/cm5/m2
 
 Instance: Pulmonalvaskulaerer-Widerstandsindex
 InstanceOf: SD_MII_ICU_Pulmonalvaskulaerer_Widerstandsindex
@@ -28,4 +28,4 @@ Usage: #example
 * effectivePeriod
   * start = "2019-12-23T09:30:10+01:00"
   * end = "2019-12-23T10:30:10+01:00"
-* valueQuantity = 80 'dyn.s/(cm5.m2)' "dyne second per centimeter5 and square meter"
+* valueQuantity = 80 'dyn.s/cm5/m2' "dyne second per centimeter5 and square meter"

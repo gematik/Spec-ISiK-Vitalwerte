@@ -13,7 +13,7 @@ Title: "SD MII ICU Linksventrikulaeres Herzzeitvolumen Durch Indikatorverduennun
 * valueQuantity
   * ^patternQuantity.unit = "liter per minute"
   * unit 1..
-  * code from VS_MII_ICU_Unit_equivalent_UCUM_L_per_minute (required)
+  * code = #L/min
 
 Instance: Linksventrikulaeres-Herzzeitvolumen-durch-Indikatorverduennung
 InstanceOf: SD_MII_ICU_Linksventrikulaeres_Herzzeitvolumen_Durch_Indikatorverduennung
