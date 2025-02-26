@@ -16,13 +16,8 @@ Title: "SD MII ICU Monitoring und Vitaldaten"
   * ^slicing.ordered = false
   * ^slicing.rules = #open
 * category contains
-    vs-cat 1..1 MS and
-    loinc-fhir-core 0..1 MS
+    vs-cat 1..1 MS
 * category[vs-cat] = $observation-category#vital-signs
-  * coding MS
-    * system 1.. MS
-    * code 1.. MS
-* category[loinc-fhir-core] = $loinc#85353-1
   * coding MS
     * system 1.. MS
     * code 1.. MS
