@@ -6,7 +6,7 @@ Usage: #definition
 * title = "ISiK CapabilityStatementISiKCapabilityStatementMinimalAdministrativeDataSource"
 * contact.telecom.system = #url
 * contact.telecom.value = "https://www.gematik.de"
-* description = "Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktionen die ein ISiK-konformes PDMS-System unterstützen muss um das Bestätigungsverfahren für das Modul Vitalparameter zu bestehen.
+* description = "Das vorliegende CapabilityStatement beschreibt grundlegende Interaktionen die ein ISiK-konformes System unterstützen muss.
 
 **HISTORIE:**    
 *Version 4.0.0*  

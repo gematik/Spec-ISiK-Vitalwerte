@@ -6,7 +6,7 @@ Usage: #definition
 * title = "ISiK CapabilityStatement Vitalparameter Server Extended"
 * contact.telecom.system = #url
 * contact.telecom.value = "https://www.gematik.de"
-* description = "Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktionen die ein ISiK-konformes PDMS-System unterstützen muss um das Bestätigungsverfahren für das Modul Vitalparameter zu bestehen."
+* description = "Das vorliegende CapabilityStatement beschreibt verpflichtende Interaktionen die ein ISiK-konformes PDMS-System zur Unterstützung des IG ICu-Normalstation-Workflow implementieren muss"
 * jurisdiction = urn:iso:std:iso:3166#DE "Germany"
 * kind = #requirements
 * fhirVersion = #4.0.1
