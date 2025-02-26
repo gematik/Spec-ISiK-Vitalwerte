@@ -22,7 +22,7 @@
       ]
     }
   ],
-  "description": "Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktionen die ein ISiK-konformes PDMS-System unterstützen muss um das Bestätigungsverfahren für das Modul Vitalparameter zu bestehen.\n\n**HISTORIE:**    \n*Version 4.0.0*  \n* `change` Initialisierung des CapabilityStatements.   ",
+  "description": "Das vorliegende CapabilityStatement beschreibt grundlegende Interaktionen die ein ISiK-konformes System unterstützen muss.\n\n**HISTORIE:**    \n*Version 4.0.0*  \n* `change` Initialisierung des CapabilityStatements.   ",
   "jurisdiction": [
     {
       "coding": [
